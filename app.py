@@ -10,7 +10,7 @@ DATA = os.path.join(BASE, "data")
 STATIC = os.path.join(BASE, "static")
 OVERRIDES = os.path.join(DATA, "overrides.json")
 HOST = os.environ.get("HOST", "127.0.0.1")
-PORT = int(os.environ.get("PORT", "3000"))
+PORT = int(os.environ.get("PORT", "8787"))
 
 MIME = {
     ".html": "text/html; charset=utf-8",
@@ -155,6 +155,11 @@ class Handler(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     ThreadingHTTPServer.allow_reuse_address = True
-    server = ThreadingHTTPServer((HOST, PORT), Handler)
+    try:
+        server = ThreadingHTTPServer((HOST, PORT), Handler)
+    except OSError as e:
+        print("Could not bind %s:%d (%s)." % (HOST, PORT, e))
+        print("Something else is using that port — pick another, e.g.: PORT=9000 python3 app.py")
+        raise SystemExit(1)
     print("Internship dashboard running at http://%s:%d" % (HOST, PORT))
     server.serve_forever()

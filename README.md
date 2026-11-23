@@ -6,10 +6,10 @@ internship search dashboard.
 
 ```bash
 python3 app.py
-# open http://localhost:3000
+# open http://localhost:8787
 ```
 
-Binds to `127.0.0.1` only (override with `HOST`/`PORT` env vars). Python 3.8+ standard library only — no pip install needed.
+Binds to `127.0.0.1` only. Default port is **8787** (3000 is often taken by other local apps — if the port is busy the app prints a clear error; override with `PORT=3000 python3 app.py` or any free port via the `PORT` env var). Python 3.8+ standard library only — no pip install needed.
 
 ## What's inside
 

@@ -253,7 +253,7 @@ function renderAbout() {
   html += '<div class="panel"><h2>Tasks</h2><ul class="tight">' +
     (DATA.tasks || []).map(t => "<li><strong>" + esc(t.Status) + "</strong> — " + esc(t.Task) + (t.Details ? ' <span class="muted">(' + esc(t.Details) + ")</span>" : "")).join("") + "</ul></div>";
   html += '<div class="panel"><h2>Run it yourself</h2><ul class="tight">' +
-    "<li><code>python3 app.py</code> → open <strong>http://localhost:3000</strong> (binds to 127.0.0.1 only; set <code>PORT</code>/<code>HOST</code> env vars to change).</li>" +
+    "<li><code>python3 app.py</code> → open <strong>http://localhost:" + location.port + "</strong> (binds to 127.0.0.1 only; default port 8787 — set <code>PORT</code>/<code>HOST</code> env vars to change; if the port is taken you'll get a clear error, pick another).</li>" +
     "<li>Data lives in <code>data/*.json</code> (exported from your Drive sheet). Edits you make (status dropdowns) are saved to <code>data/overrides.json</code> on this machine.</li>" +
     "<li>Ask your Vibe session to re-export from Drive to refresh the JSON — the sheet stays the source of truth.</li>" +
     "</ul></div>";
