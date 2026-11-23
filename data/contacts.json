@@ -1,0 +1,506 @@
+[
+ {
+  "Name": "Asia Finance",
+  "Job Title": "Fintech Company",
+  "Company": "Asia Finance",
+  "Location": "Singapore",
+  "Category": "Fintech & Payments",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/asiafinance"
+ },
+ {
+  "Name": "Jatin Khanna",
+  "Job Title": "Head of FinTech & Innovation",
+  "Company": "Maybank",
+  "Location": "Singapore",
+  "Category": "Fintech & Payments",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/jatinkhanna1"
+ },
+ {
+  "Name": "Aadarsh Saxena",
+  "Job Title": "Senior Strategy and Operations Manager",
+  "Company": "Revolut",
+  "Location": "Singapore",
+  "Category": "Fintech & Payments",
+  "List": "SG 50",
+  "LinkedIn": ""
+ },
+ {
+  "Name": "Eugene C.",
+  "Job Title": "Product Operations - Enterprise",
+  "Company": "Stripe",
+  "Location": "Singapore",
+  "Category": "Fintech & Payments",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/eugenechanyc"
+ },
+ {
+  "Name": "Clarence Choy",
+  "Job Title": "Product Specialist",
+  "Company": "Wise",
+  "Location": "Singapore",
+  "Category": "Fintech & Payments",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/choyclarence"
+ },
+ {
+  "Name": "Qiwen Yin",
+  "Job Title": "Senior Compliance Analyst (EDD)",
+  "Company": "Airwallex",
+  "Location": "Singapore",
+  "Category": "Fintech & Payments",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/yinqiwen"
+ },
+ {
+  "Name": "Prachi Kongari",
+  "Job Title": "Talent Acquisition",
+  "Company": "Airwallex",
+  "Location": "Singapore",
+  "Category": "Fintech & Payments",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/prachikongari"
+ },
+ {
+  "Name": "August Ong",
+  "Job Title": "Senior Growth Manager",
+  "Company": "Tazapay",
+  "Location": "Singapore",
+  "Category": "Fintech & Payments",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/augustongwe"
+ },
+ {
+  "Name": "Narinderpal Singh Dhillon",
+  "Job Title": "Chief Technology Officer",
+  "Company": "Paywho",
+  "Location": "Singapore",
+  "Category": "Fintech & Payments",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/narinsd"
+ },
+ {
+  "Name": "Ronald Kan",
+  "Job Title": "Staff Engineer",
+  "Company": "StashAway",
+  "Location": "Singapore",
+  "Category": "Fintech & Payments",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/ronaldkanwl"
+ },
+ {
+  "Name": "Noi Keng Koh",
+  "Job Title": "Senior Lecturer",
+  "Company": "FinTech Academy Pte Ltd",
+  "Location": "Singapore",
+  "Category": "Fintech & Payments",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/noi-keng-koh-2312111a"
+ },
+ {
+  "Name": "Kevin Xiong J. K.",
+  "Job Title": "Head of Agency Distribution (Insurtech)",
+  "Company": "DirectAsia Insurance",
+  "Location": "Singapore",
+  "Category": "Fintech & Payments",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/kevin-xiong-j-k-4b5ab9131"
+ },
+ {
+  "Name": "Phan Nguyen",
+  "Job Title": "Artificial Intelligence Engineer",
+  "Company": "TikTok",
+  "Location": "Singapore",
+  "Category": "AI Data & Engineering",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/phannguyen0605"
+ },
+ {
+  "Name": "Ling Yit Wong",
+  "Job Title": "Head of AI",
+  "Company": "BJAK",
+  "Location": "Singapore",
+  "Category": "AI Data & Engineering",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/ling-yit-wong-83772b178"
+ },
+ {
+  "Name": "Alan Dao",
+  "Job Title": "AI Researcher",
+  "Company": "Menlo Research",
+  "Location": "Singapore",
+  "Category": "AI Data & Engineering",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/alandao-jan"
+ },
+ {
+  "Name": "Khai Kit W.",
+  "Job Title": "Machine Learning Engineer",
+  "Company": "CSIT",
+  "Location": "Singapore",
+  "Category": "AI Data & Engineering",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/khai-kit-wong"
+ },
+ {
+  "Name": "Jaymee Song",
+  "Job Title": "Data Scientist",
+  "Company": "Seagate Technology",
+  "Location": "Singapore",
+  "Category": "AI Data & Engineering",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/jaymeesong"
+ },
+ {
+  "Name": "Zijun Kan",
+  "Job Title": "Software Engineer",
+  "Company": "Google",
+  "Location": "Singapore",
+  "Category": "AI Data & Engineering",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/kanzijun"
+ },
+ {
+  "Name": "Abhi Goswami",
+  "Job Title": "Generative AI Specialist",
+  "Company": "MS2 Entertainment LLP",
+  "Location": "Singapore",
+  "Category": "AI Data & Engineering",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/augela-goh-2345"
+ },
+ {
+  "Name": "Praveen Shetty",
+  "Job Title": "Director Engineering Lead",
+  "Company": "Standard Chartered",
+  "Location": "Singapore",
+  "Category": "AI Data & Engineering",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/praveenshettym"
+ },
+ {
+  "Name": "Alvaro Garrido",
+  "Job Title": "COO Tech & Ops / Chief Data & AI Officer",
+  "Company": "Monetary Authority of Singapore",
+  "Location": "Singapore",
+  "Category": "AI Data & Engineering",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/garridoalvaro"
+ },
+ {
+  "Name": "Nigel Chen",
+  "Job Title": "Relationship Manager",
+  "Company": "DBS Bank",
+  "Location": "Singapore",
+  "Category": "Banking & Financial Services",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/nigel-chen-ba8184259"
+ },
+ {
+  "Name": "Alison Lee",
+  "Job Title": "KYC Senior Associate IBG",
+  "Company": "DBS Bank",
+  "Location": "Singapore",
+  "Category": "Banking & Financial Services",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/alisonqueenie"
+ },
+ {
+  "Name": "Eric Chua H P",
+  "Job Title": "Vice President",
+  "Company": "UOB",
+  "Location": "Singapore",
+  "Category": "Banking & Financial Services",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/eric-chua-h-p-62677034"
+ },
+ {
+  "Name": "Lim Choo Er",
+  "Job Title": "Manager Risk Analytics and Modelling",
+  "Company": "UOB",
+  "Location": "Singapore",
+  "Category": "Banking & Financial Services",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/chooerlim"
+ },
+ {
+  "Name": "Xueyang L.",
+  "Job Title": "Product Manager",
+  "Company": "Bank of China Singapore Branch",
+  "Location": "Singapore",
+  "Category": "Banking & Financial Services",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/lai-xueyang"
+ },
+ {
+  "Name": "Estella Peh",
+  "Job Title": "Transaction Banking Digital Graduate",
+  "Company": "Standard Chartered Singapore",
+  "Location": "Singapore",
+  "Category": "Banking & Financial Services",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/estella-peh-ch"
+ },
+ {
+  "Name": "Sandy Guo",
+  "Job Title": "Client Relationship Manager",
+  "Company": "Goldman Sachs",
+  "Location": "Singapore",
+  "Category": "Banking & Financial Services",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/sandy-guo-42"
+ },
+ {
+  "Name": "[16/11/26 5:21 PM] Claudysseus: b752141",
+  "Job Title": "",
+  "Company": "",
+  "Location": "",
+  "Category": "",
+  "List": "",
+  "LinkedIn": ""
+ },
+ {
+  "Name": "Judy Ji",
+  "Job Title": "Vice President",
+  "Company": "J.P. Morgan",
+  "Location": "Singapore",
+  "Category": "Banking & Financial Services",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/judy-ji-65740790"
+ },
+ {
+  "Name": "Kinczel Tan",
+  "Job Title": "Not specified",
+  "Company": "Deutsche Bank",
+  "Location": "Singapore",
+  "Category": "Banking & Financial Services",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/kinczel-tan"
+ },
+ {
+  "Name": "Prem Xavier Raj",
+  "Job Title": "Executive Director - Private Banking",
+  "Company": "Indosuez Wealth Management",
+  "Location": "Singapore",
+  "Category": "Banking & Financial Services",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/prem-xavier-raj"
+ },
+ {
+  "Name": "Lee Eng Goh",
+  "Job Title": "Managing Director",
+  "Company": "LGT Private Banking",
+  "Location": "Singapore",
+  "Category": "Banking & Financial Services",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/lee-eng-goh-829293229"
+ },
+ {
+  "Name": "Meixiao Huang",
+  "Job Title": "Senior Associate",
+  "Company": "Temasek",
+  "Location": "Singapore",
+  "Category": "Investment VC & Asset Mgmt",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/meixiao-huang-8a37523"
+ },
+ {
+  "Name": "Sook Ying Hoong",
+  "Job Title": "Manager",
+  "Company": "GIC",
+  "Location": "Singapore",
+  "Category": "Investment VC & Asset Mgmt",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/sook-ying-hoong-7451178a"
+ },
+ {
+  "Name": "Aakash Kapoor",
+  "Job Title": "Investor India and SEA",
+  "Company": "Peak XV Partners",
+  "Location": "Singapore",
+  "Category": "Investment VC & Asset Mgmt",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/aakash-kapoor-792a2b40"
+ },
+ {
+  "Name": "Ong Wan Qi",
+  "Job Title": "VC Lead",
+  "Company": "Rouge International & Rouge Ventures",
+  "Location": "Singapore",
+  "Category": "Investment VC & Asset Mgmt",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/ongwanqi"
+ },
+ {
+  "Name": "Milena Nikolova",
+  "Job Title": "Board of Trustees Member Chair of FARco",
+  "Company": "Antares Ventures",
+  "Location": "Singapore",
+  "Category": "Investment VC & Asset Mgmt",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/milena-nikolova-vatchkova"
+ },
+ {
+  "Name": "Ben L.",
+  "Job Title": "Mentor",
+  "Company": "Treehouse Labs",
+  "Location": "Singapore",
+  "Category": "Investment VC & Asset Mgmt",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/benlk"
+ },
+ {
+  "Name": "Peter Monson CFA",
+  "Job Title": "Investment Analyst",
+  "Company": "Putnam Investments",
+  "Location": "Singapore",
+  "Category": "Investment VC & Asset Mgmt",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/peter-monson-cfa-5a124415"
+ },
+ {
+  "Name": "Milind Pandit",
+  "Job Title": "Quantitative Analyst",
+  "Company": "Macquarie Group",
+  "Location": "Singapore",
+  "Category": "Investment VC & Asset Mgmt",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/milindpandit"
+ },
+ {
+  "Name": "Michelle Er",
+  "Job Title": "Merchant Success",
+  "Company": "Grab",
+  "Location": "Singapore",
+  "Category": "Business & Strategy",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/michelle-er"
+ },
+ {
+  "Name": "Alex Pyng",
+  "Job Title": "Chief Financial Officer",
+  "Company": "Thye Hua Kwan Moral Charities",
+  "Location": "Singapore",
+  "Category": "Business & Strategy",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/alex-pyng-87932a0"
+ },
+ {
+  "Name": "Hariharan Nair",
+  "Job Title": "Manager (Strategy)",
+  "Company": "NTUC",
+  "Location": "Singapore",
+  "Category": "Business & Strategy",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/h-nair"
+ },
+ {
+  "Name": "Win Zaw Aung",
+  "Job Title": "Managing Director",
+  "Company": "Sea Lion",
+  "Location": "Singapore",
+  "Category": "Business & Strategy",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/win-zaw-aung-47925213b"
+ },
+ {
+  "Name": "Bernadette Inah Pantaleon",
+  "Job Title": "Founder",
+  "Company": "Knight",
+  "Location": "Singapore",
+  "Category": "Business & Strategy",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/bernadette-inah-pantaleon"
+ },
+ {
+  "Name": "JMS Rogers BD Division",
+  "Job Title": "Business Development Manager",
+  "Company": "JMS ROGERS",
+  "Location": "Singapore",
+  "Category": "Business & Strategy",
+  "List": "SG 50",
+  "LinkedIn": "https://www.linkedin.com/in/jmsbd"
+ },
+ {
+  "Name": "Ninon Z.",
+  "Job Title": "Business Advisor - Health & Lifestyle",
+  "Company": "French Chamber of Commerce in Singapore (FCCS)",
+  "Location": "Singapore",
+  "Category": "FCCS Direct",
+  "List": "French Ecosystem",
+  "LinkedIn": "https://www.linkedin.com/in/ninon-z-8971a42a4"
+ },
+ {
+  "Name": "Yue Xi Joyce Hui",
+  "Job Title": "Corporate Services Executive",
+  "Company": "French Chamber of Commerce in Singapore (FCCS)",
+  "Location": "Singapore",
+  "Category": "FCCS Direct",
+  "List": "French Ecosystem",
+  "LinkedIn": "https://www.linkedin.com/in/joycehuiyx"
+ },
+ {
+  "Name": "Baptiste Leblanc",
+  "Job Title": "Business Developer",
+  "Company": "French Chamber of Commerce in Singapore (FCCS)",
+  "Location": "Singapore",
+  "Category": "FCCS Direct",
+  "List": "French Ecosystem",
+  "LinkedIn": "https://www.linkedin.com/in/baptiste-leblanc-8b8631221"
+ },
+ {
+  "Name": "Marine Queniart-Stojanovic",
+  "Job Title": "Board Director and Co-President Healthcare Committee",
+  "Company": "Prezent / FCCS",
+  "Location": "Singapore",
+  "Category": "FCCS Affiliated",
+  "List": "French Ecosystem",
+  "LinkedIn": "https://www.linkedin.com/in/marine-queniart-stojanovic"
+ },
+ {
+  "Name": "Tanguy Baudoin",
+  "Job Title": "Community Organizer Chapter Data AI & Analytics",
+  "Company": "Thales Cyber and Digital / La French Tech",
+  "Location": "Singapore",
+  "Category": "French Tech",
+  "List": "French Ecosystem",
+  "LinkedIn": "https://www.linkedin.com/in/tanguy-baudoin"
+ },
+ {
+  "Name": "Aurore Duhamel",
+  "Job Title": "Community Lead",
+  "Company": "Microsoft / La French Tech",
+  "Location": "Singapore",
+  "Category": "French Tech",
+  "List": "French Ecosystem",
+  "LinkedIn": "https://www.linkedin.com/in/aurore-duhamel-33158284"
+ },
+ {
+  "Name": "Cyril Ebersweiler",
+  "Job Title": "Partner / Keynote Speaker",
+  "Company": "SOSV",
+  "Location": "Singapore",
+  "Category": "French Tech",
+  "List": "French Ecosystem",
+  "LinkedIn": "https://www.linkedin.com/in/cyrilebersweiler"
+ },
+ {
+  "Name": "Cindy G.",
+  "Job Title": "Founder & CEO",
+  "Company": "VIKTOR & SASHA",
+  "Location": "Singapore",
+  "Category": "French Tech",
+  "List": "French Ecosystem",
+  "LinkedIn": "https://www.linkedin.com/in/cindygizard"
+ },
+ {
+  "Name": "Arthur Le Vaillant",
+  "Job Title": "Founder",
+  "Company": "LA MAISON DU WHISKY",
+  "Location": "Singapore",
+  "Category": "French Tech",
+  "List": "French Ecosystem",
+  "LinkedIn": "https://www.linkedin.com/in/arthur-le-vaillant"
+ }
+]
