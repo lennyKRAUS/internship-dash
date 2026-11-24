@@ -377,3 +377,67 @@ nav button.active .badge { color: #2a7a5a; }
 .modal-overlay { background: rgba(35, 60, 50, .28); }
 tbody tr { background: rgba(255,255,255,.30); }
 th { background: rgba(255,255,255,.5); }
+
+/* ---- DARK liquid-glass overhaul (refs: #121212 bg, #1E1E1E panels, #E0E0E0 text;
+   accents teal #4ECDC4 / green #4CAF50 / orange #FF5722 / blue #2196F3) ----
+   Nature photo stays as backdrop, dimmed under a dark veil; glass = dark
+   translucent panels with specular top rim. */
+:root {
+  --text: #e6ebf2;
+  --muted: #9aa5b5;
+  --accent1: #4ecdc4;
+  --accent2: #2196f3;
+  --accent3: #4caf50;
+  --glass: linear-gradient(180deg, rgba(34,40,48,.62), rgba(20,24,30,.52));
+  --glass-strong: linear-gradient(180deg, rgba(38,44,54,.78), rgba(24,28,36,.62));
+  --glass-border: rgba(255,255,255,.09);
+  --shadow: 0 18px 50px rgba(0,0,0,.55), 0 2px 8px rgba(0,0,0,.4);
+  --rim: inset 0 1px 0 rgba(255,255,255,.16), inset 0 -1px 0 rgba(255,255,255,.05), inset 1px 0 0 rgba(255,255,255,.07);
+}
+body { background: #0e1116 url("/static/backdrop.jpg") center / cover no-repeat fixed; }
+body::before {
+  background:
+    radial-gradient(700px 420px at 12% 6%, rgba(78,205,196,.14), transparent 60%),
+    radial-gradient(760px 520px at 88% 10%, rgba(33,150,243,.12), transparent 60%),
+    linear-gradient(180deg, rgba(8,12,16,.72), rgba(8,12,16,.55) 45%, rgba(8,12,16,.74));
+  filter: none;
+}
+th { background: rgba(255,255,255,.06); color: var(--muted); }
+tbody tr { background: rgba(255,255,255,.035); }
+tbody tr:hover { background: rgba(255,255,255,.08); }
+td a, .bubble-link { color: #64b5f6; }
+.inbox-row { border-bottom: 1px solid rgba(255,255,255,.08); }
+.inbox-row:hover { background: rgba(255,255,255,.07); }
+.controls input, .controls select, .controls label.toggle, select.status, select.ostatus { color: var(--text); }
+.controls input::placeholder { color: var(--muted); }
+nav button { color: var(--muted); }
+nav button:hover { background: rgba(255,255,255,.07); color: var(--text); }
+nav button.active {
+  background: linear-gradient(135deg, rgba(78,205,196,.92), rgba(33,150,243,.92));
+  color: #04211e; box-shadow: 0 6px 22px rgba(78,205,196,.35);
+}
+nav button.active .badge { background: rgba(4,33,30,.85); color: #4ecdc4; }
+.badge { background: rgba(78,205,196,.18); color: #4ecdc4; }
+.kpi-big .num { background: linear-gradient(135deg, #4ecdc4, #2196f3 65%, #4caf50); -webkit-background-clip: text; background-clip: text; }
+.kpi.warn .num { background: linear-gradient(135deg, #ff8a5c, #ff5722); -webkit-background-clip: text; background-clip: text; }
+.kpi.good .num { background: linear-gradient(135deg, #7ee08a, #4caf50); -webkit-background-clip: text; background-clip: text; }
+.f-bar, .bar-row .bar { background: linear-gradient(90deg, #4ecdc4, #2196f3, #4caf50); box-shadow: 0 4px 16px rgba(78,205,196,.35); }
+.avatar { background: linear-gradient(135deg, #2196f3, #4ecdc4); box-shadow: 0 4px 14px rgba(33,150,243,.4); }
+.avatar-person { background: linear-gradient(135deg, #4ecdc4, #4caf50); }
+.controls a.btn { background: linear-gradient(135deg, #4ecdc4, #2196f3); color: #04211e; box-shadow: 0 6px 18px rgba(78,205,196,.35); }
+.modal-overlay { background: rgba(4, 8, 12, .62); }
+.modal-close { background: rgba(255,255,255,.08); color: var(--muted); }
+.modal-close:hover { background: rgba(255,255,255,.16); color: var(--text); }
+.flash { background: var(--glass-strong); border: 1px solid rgba(78,205,196,.4); color: #4ecdc4; }
+
+.pill.applied { background: rgba(76,175,80,.22); color: #7ee08a; }
+.pill.packet { background: rgba(33,150,243,.25); color: #6fb6ff; }
+.pill.hold { background: rgba(255,193,7,.22); color: #ffd54f; }
+.pill.skip { background: rgba(255,255,255,.10); color: var(--muted); }
+.pill.todo { background: rgba(255,255,255,.07); color: var(--muted); }
+.pill.sent { background: rgba(78,205,196,.22); color: #4ecdc4; }
+.pill.urgent { background: rgba(255,87,34,.25); color: #ff8a5c; }
+.pill.due { background: rgba(255,193,7,.22); color: #ffd54f; }
+.pill.ok { background: rgba(255,255,255,.08); color: var(--muted); }
+.pill.march { background: rgba(78,205,196,.18); color: #4ecdc4; }
+.pill.confirm { background: rgba(255,193,7,.22); color: #ffd54f; }

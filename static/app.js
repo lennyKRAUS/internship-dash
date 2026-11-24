@@ -62,7 +62,7 @@ function donut(counts) {
     offset += frac * C;
   }
   const legend = entries.map(([k, v]) => `<span style="color:${BUCKET_COLORS[k]}">■</span> ${esc(k)} (${v})`).join(" &nbsp; ");
-  return `<svg width="140" height="140">${arcs}<text x="70" y="66" text-anchor="middle" fill="#2a2440" font-size="22" font-weight="800">${total}</text><text x="70" y="84" text-anchor="middle" fill="#6f6a8a" font-size="11">roles</text></svg>
+  return `<svg width="140" height="140">${arcs}<text x="70" y="66" text-anchor="middle" fill="#e6ebf2" font-size="22" font-weight="800">${total}</text><text x="70" y="84" text-anchor="middle" fill="#9aa5b5" font-size="11">roles</text></svg>
     <div class="legend">${legend}</div>`;
 }
 function bars(counts) {
