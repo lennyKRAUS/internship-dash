@@ -140,12 +140,15 @@ function renderOverview() {
   document.getElementById("tab-overview").innerHTML = html;
 }
 
+const FILTERS = { explicit: { q: "", fam: "", st: "" }, leads: { q: "", fam: "", st: "" } };
+
 function pipelineTable(rows, kind) {
-  const q = (document.getElementById("q-" + kind).value || "").toLowerCase();
-  const fam = document.getElementById("fam-" + kind).value;
-  const st = document.getElementById("st-" + kind).value;
+  const f = FILTERS[kind];
+  const q = f.q.toLowerCase();
+  const fam = f.fam;
+  const st = f.st;
   let html = '<div class="controls">' +
-    '<input type="search" id="q-' + kind + '" placeholder="Search company, role, notes…" value="' + esc(q) + '">' +
+    '<input type="search" id="q-' + kind + '" placeholder="Search company, role, notes..." value="' + esc(f.q) + '">' +
     '<select id="fam-' + kind + '"><option value="">All families</option>' +
     Object.keys(countBy(rows, "Family")).sort().map(f => '<option' + (f === fam ? " selected" : "") + ">" + esc(f) + "</option>").join("") +
     '</select><select id="st-' + kind + '"><option value="">All statuses</option>' +
@@ -182,8 +185,10 @@ function renderLeads() {
 }
 
 function bindPipelineControls(kind) {
-  for (const id of ["q-" + kind, "fam-" + kind, "st-" + kind]) {
-    document.getElementById(id).addEventListener("input", () => {
+  const map = { ["q-" + kind]: "q", ["fam-" + kind]: "fam", ["st-" + kind]: "st" };
+  for (const id of Object.keys(map)) {
+    document.getElementById(id).addEventListener("input", e => {
+      FILTERS[kind][map[id]] = e.target.value;
       if (kind === "explicit") renderPipeline(); else renderLeads();
     });
   }
@@ -297,4 +302,16 @@ document.addEventListener("change", e => {
   });
 });
 
-fetch("/api/data").then(r => r.json()).then(d => { DATA = d; renderAll(); });
+function renderAllSafe() {
+  try { renderAll(); }
+  catch (err) {
+    console.error(err);
+    const b = document.createElement("div");
+    b.className = "flash";
+    b.style.cssText = "position:fixed;top:8px;right:8px;background:#e05d5d;color:#fff;padding:10px 14px;border-radius:8px;z-index:99;font-size:13px;max-width:420px";
+    b.textContent = "Render error: " + err.message;
+    document.body.appendChild(b);
+  }
+}
+
+fetch("/api/data").then(r => r.json()).then(d => { DATA = d; renderAllSafe(); });
