@@ -14,8 +14,11 @@ Python 3.8+ standard library only — no pip install needed. Liquid-glass UI, no
 
 ## Tabs
 
-- **Overview** — KPIs (relevant roles, explicit-March, applied, packets ready, deadlines ≤ 7d, people contacted),
-  status donut, family bars, deadline table with days-left pills, blockers.
+- **Overview** — two big clickable glass cards: **Relevant March offers** (opens a simplified offer list) and
+  **People contacted** (opens contact bubbles; updates automatically as you mark Sent in Outreach).
+  Below: a pipeline **funnel** (relevant → explicit March → packets ready → applied), canonical role-family bars
+  (each role counted once in its primary family), and an inbox-style **Follow-ups & deadlines** list
+  (application deadlines + people to follow up with, last-contacted dates).
 - **Pipeline** — explicit-March roles + confirm-March leads in one table. Filters: search, **BBA-relevant only**
   (default on; hides tech/IT/cyber/security/engineering/quant roles), **Explicit March only**. Status dropdown per
   row (saved locally), portal links, notes/eligibility flags, CSV export (`/api/export.csv`).

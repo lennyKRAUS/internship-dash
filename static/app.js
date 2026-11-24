@@ -79,38 +79,112 @@ function statusSelect(kind, index, current, options) {
   return `<select class="${kind === "pipeline" ? "status" : "ostatus"}" data-kind="${kind}" data-index="${index}">${opts}</select>`;
 }
 
+function canonFamily(r) {
+  const f = (r.Family || "") + " " + (r.Role || "");
+  if (/consulting/i.test(f)) return "Consulting";
+  if (/finance|accounting|tax|banking/i.test(f)) return "Finance";
+  if (/data|analytics/i.test(f)) return "Data";
+  if (/business|\bops\b|\bbd\b|communications|marketing/i.test(f)) return "Business / Ops / BD";
+  if (/machine learning|\bml\b|\bai\b/i.test(f)) return "AI / ML";
+  if (/tech|\bit\b|cyber|security/i.test(f)) return "Tech";
+  return "Other";
+}
+
+function funnelHtml(stages) {
+  const max = Math.max(1, stages[0].value);
+  return stages.map((s, i) => {
+    const w = Math.max(7, Math.round(100 * s.value / max));
+    const pct = i === 0 || !stages[i - 1].value ? "" : ` · ${Math.round(100 * s.value / stages[i - 1].value)}%`;
+    return `<div class="funnel-row"><span class="f-label">${esc(s.label)}</span><span class="f-track"><span class="f-bar" style="width:${w}%"></span></span><span class="f-val">${s.value}${pct}</span></div>`;
+  }).join("");
+}
+
+function openModal(title, bodyHtml) {
+  closeModal();
+  const ov = document.createElement("div");
+  ov.className = "modal-overlay";
+  ov.id = "modal";
+  ov.innerHTML = `<div class="modal"><div class="modal-head"><h2>${esc(title)}</h2><button class="modal-close" id="modal-x">✕</button></div><div class="modal-body">${bodyHtml}</div></div>`;
+  document.body.appendChild(ov);
+  ov.addEventListener("click", e => { if (e.target === ov || (e.target && e.target.id === "modal-x")) closeModal(); });
+}
+function closeModal() {
+  const m = document.getElementById("modal");
+  if (m) m.remove();
+}
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
+
+function initials(name) {
+  return String(name || "?").split(/\s+/).map(w => w[0]).join("").slice(0, 2).toUpperCase();
+}
+
+function offersModalHtml() {
+  const rows = visibleRows().filter(r => r.List === "Explicit March");
+  if (!rows.length) return '<p class="muted">No relevant explicit-March offers right now.</p>';
+  return `<div class="table-wrap"><table><thead><tr><th>Company</th><th>Role</th><th>Family</th><th>Deadline</th><th>Status</th><th></th></tr></thead><tbody>` +
+    rows.map(r => `<tr><td><strong>${esc(r.Company)}</strong></td><td>${esc(r.Role)}</td><td>${esc(canonFamily(r))}</td><td>${deadlinePill(r["Application deadline"])}</td><td><span class="pill ${pillClass(effBucket(r))}">${esc(effBucket(r))}</span></td><td>${r["Portal link"] && r["Portal link"] !== "UNRDD" ? `<a href="${esc(r["Portal link"])}" target="_blank" rel="noopener">apply ↗</a>` : ""}</td></tr>`).join("") +
+    `</tbody></table></div>`;
+}
+
+function peopleModalHtml() {
+  const sent = (DATA.people || []).filter(p => p.Status === "Sent");
+  if (!sent.length) return '<p class="muted">No one contacted yet — mark people as Sent in the Outreach tab.</p>';
+  return `<div class="bubbles">` + sent.map(p =>
+    `<div class="bubble"><span class="avatar">${esc(initials(p.Name))}</span><div class="bubble-main"><strong>${esc(p.Name)}</strong><span class="bubble-sub">${esc(p.Company)} — ${esc(p.Position)}</span><span class="bubble-why">${esc(p.Relevance)}</span>${p.LinkedIn ? `<a class="bubble-link" href="${esc(p.LinkedIn)}" target="_blank" rel="noopener">LinkedIn ↗</a>` : ""}</div><span class="pill sent">sent</span></div>`
+  ).join("") + `</div>`;
+}
+
+function inboxHtml() {
+  const items = [];
+  for (const r of visibleRows()) {
+    if (r.List !== "Explicit March") continue;
+    const d = parseDeadline(r["Application deadline"]);
+    if (!d) continue;
+    items.push({ type: "app", date: d, title: r.Company, sub: r.Role, note: r["Notes / eligibility flags"] || "", right: deadlinePill(r["Application deadline"]), href: r["Portal link"] });
+  }
+  const sentDate = parseDeadline("2026-11-16");
+  for (const p of (DATA.people || []).filter(p => p.Status === "Sent")) {
+    items.push({ type: "person", date: sentDate, title: p.Name, sub: `${p.Company} — ${p.Position}`, note: p.Relevance || "", right: `<span class="pill ok">contacted 16/11</span>`, href: p.LinkedIn });
+  }
+  items.sort((a, b) => a.date - b.date);
+  if (!items.length) return '<p class="muted">Nothing time-sensitive right now.</p>';
+  return items.map(it => `<div class="inbox-row">
+    <span class="avatar ${it.type === "person" ? "avatar-person" : ""}">${it.type === "person" ? esc(initials(it.title)) : "✉"}</span>
+    <div class="inbox-main"><div class="inbox-top"><strong>${esc(it.title)}</strong><span class="inbox-sub">${esc(it.sub)}</span></div>
+    <div class="inbox-snippet">${esc(it.note)}</div></div>
+    <div class="inbox-right">${it.right}${it.href && it.href !== "UNRDD" ? ` <a href="${esc(it.href)}" target="_blank" rel="noopener">↗</a>` : ""}</div>
+  </div>`).join("");
+}
+
 function renderOverview() {
   const rows = visibleRows();
   const explicit = rows.filter(r => r.List === "Explicit March");
+  const sent = (DATA.people || []).filter(p => p.Status === "Sent");
   const buckets = {};
   for (const r of rows) { const b = effBucket(r); buckets[b] = (buckets[b] || 0) + 1; }
-  const sent = (DATA.people || []).filter(p => p.Status === "Sent").length;
-  const urgent = explicit.filter(r => { const d = parseDeadline(r["Application deadline"]); return d && daysLeft(d) <= 7; });
-  const kpis = [
-    { num: rows.length, lbl: "Relevant March 2027 roles", cls: "" },
-    { num: explicit.length, lbl: "Explicit March start", cls: "" },
-    { num: buckets["Applied"] || 0, lbl: "Applied", cls: "good" },
-    { num: buckets["Packet ready"] || 0, lbl: "Packets ready", cls: "" },
-    { num: urgent.length, lbl: "Deadlines ≤ 7 days", cls: urgent.length ? "warn" : "good" },
-    { num: sent, lbl: "People contacted", cls: "" },
-    { num: (DATA.people || []).length, lbl: "Total people", cls: "" },
+  const big = [
+    { id: "offers", num: explicit.length, lbl: "Relevant March offers", hint: "March 2027 start · BBA-fit · listing open — click to browse" },
+    { id: "people", num: sent.length, lbl: "People contacted", hint: "LinkedIn connect notes sent so far — click to see who" },
   ];
-  let html = `<div class="kpis">${kpis.map(k => `<div class="kpi ${k.cls}"><div class="num">${k.num}</div><div class="lbl">${k.lbl}</div></div>`).join("")}</div>`;
+  let html = `<div class="kpis-big">` + big.map(b =>
+    `<button class="kpi-big" data-modal="${b.id}"><span class="num">${b.num}</span><span class="lbl">${b.lbl}</span><span class="hint">${b.hint}</span></button>`
+  ).join("") + `</div>`;
+  const stages = [
+    { label: "Relevant offers", value: rows.length },
+    { label: "Explicit March", value: explicit.length },
+    { label: "Packets ready", value: buckets["Packet ready"] || 0 },
+    { label: "Applied", value: buckets["Applied"] || 0 },
+  ];
   html += `<div class="charts">
-    <div class="chart"><h3>Pipeline status</h3>${donut(buckets)}</div>
-    <div class="chart"><h3>Role families (shown)</h3>${bars(countBy(rows, "Family"))}</div>
+    <div class="chart"><h3>Funnel</h3>${funnelHtml(stages)}</div>
+    <div class="chart"><h3>Role families (primary bucket, counted once)</h3>${bars(countBy(rows.map(r => ({ Family: canonFamily(r) })), "Family"))}</div>
   </div>`;
-  const due = explicit.filter(r => parseDeadline(r["Application deadline"]))
-    .sort((a, b) => parseDeadline(a["Application deadline"]) - parseDeadline(b["Application deadline"]));
-  if (due.length) {
-    html += `<div class="panel"><h2>Deadlines</h2><div class="table-wrap"><table><thead><tr><th>Company</th><th>Role</th><th>Deadline</th><th>Status</th></tr></thead><tbody>` +
-      due.map(r => `<tr><td><strong>${esc(r.Company)}</strong></td><td>${esc(r.Role)}</td><td>${deadlinePill(r["Application deadline"])}</td><td><span class="pill ${pillClass(effBucket(r))}">${esc(effBucket(r))}</span></td></tr>`).join("") +
-      `</tbody></table></div></div>`;
-  }
-  if (DATA.holds && DATA.holds.length) {
-    html += `<div class="panel"><h2>Blockers</h2><ul class="tight">${DATA.holds.map(h => `<li>${esc(h)}</li>`).join("")}</ul></div>`;
-  }
+  html += `<div class="panel"><h2>Follow-ups &amp; deadlines</h2>${inboxHtml()}</div>`;
   document.getElementById("tab-overview").innerHTML = html;
+  document.querySelectorAll(".kpi-big").forEach(btn => btn.addEventListener("click", () => {
+    if (btn.dataset.modal === "offers") openModal("Relevant March offers", offersModalHtml());
+    else openModal("People contacted", peopleModalHtml());
+  }));
 }
 
 function renderPipeline() {
