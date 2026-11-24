@@ -202,7 +202,7 @@ function renderOutreach() {
   } else html += '<p class="muted">No outreach logged yet.</p>';
   html += "</div>";
 
-  html += '<div class="panel"><h2>Contact list (' + contacts.length + ")</h2><div class="controls">' +
+  html += '<div class="panel"><h2>Contact list (' + contacts.length + ')</h2><div class="controls">' +
     '<input type="search" id="cq" placeholder="Search name, title, company…">' +
     '<select id="ccat"><option value="">All categories</option>' +
     Object.keys(countBy(contacts, "Category")).sort().map(c => "<option>" + esc(c) + "</option>").join("") +
@@ -229,7 +229,7 @@ function renderArchive() {
     '<input type="search" id="aq" placeholder="Search company, role, reason…">' +
     '<select id="astatus"><option value="">All</option>' +
     ["open", "closed", "rejected", "unclear"].map(s => "<option>" + s + "</option>").join("") +
-    "</select><span class="muted small">' + closed.length + ' records</span></div>';
+    '</select><span class="muted small">' + closed.length + ' records</span></div>';
   html += '<div class="panel"><table><thead><tr><th>Company</th><th>Role</th><th>Status</th><th>Reason</th><th>Link</th></tr></thead><tbody id="abody"></tbody></table></div>';
   document.getElementById("tab-archive").innerHTML = html;
   const render = () => {
