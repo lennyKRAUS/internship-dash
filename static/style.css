@@ -441,3 +441,55 @@ nav button.active .badge { background: rgba(4,33,30,.85); color: #4ecdc4; }
 .pill.ok { background: rgba(255,255,255,.08); color: var(--muted); }
 .pill.march { background: rgba(78,205,196,.18); color: #4ecdc4; }
 .pill.confirm { background: rgba(255,193,7,.22); color: #ffd54f; }
+
+/* ---- MONOCHROME liquid glass: pure black / grey / white + warm amber highlights ----
+   (ref: black bg, grey glass sculpture, warm orange-amber light; monkey logo) */
+:root {
+  --text: #f2f2f4;
+  --muted: #98989e;
+  --accent1: #ff9f0a;
+  --accent2: #ffd60a;
+  --accent3: #ffffff;
+  --glass: linear-gradient(180deg, rgba(42,42,46,.55), rgba(20,20,23,.50));
+  --glass-strong: linear-gradient(180deg, rgba(50,50,56,.75), rgba(26,26,30,.62));
+  --glass-border: rgba(255,255,255,.10);
+  --shadow: 0 18px 50px rgba(0,0,0,.8), 0 2px 8px rgba(0,0,0,.5);
+  --rim: inset 0 1px 0 rgba(255,255,255,.14), inset 0 -1px 0 rgba(255,255,255,.04), inset 1px 0 0 rgba(255,255,255,.06);
+}
+body { background: #000; }
+body::before {
+  background:
+    radial-gradient(700px 420px at 12% 4%, rgba(255,159,10,.10), transparent 60%),
+    radial-gradient(760px 520px at 88% 8%, rgba(255,255,255,.05), transparent 60%),
+    radial-gradient(900px 700px at 50% 112%, rgba(255,120,0,.07), transparent 62%);
+  filter: none;
+}
+.logo { box-shadow: 0 6px 20px rgba(255,159,10,.28); }
+th { background: rgba(255,255,255,.05); }
+tbody tr { background: rgba(255,255,255,.03); }
+tbody tr:hover { background: rgba(255,255,255,.07); }
+.inbox-row { border-bottom: 1px solid rgba(255,255,255,.07); }
+.inbox-row:hover { background: rgba(255,255,255,.06); }
+td a, .bubble-link { color: #ffb340; }
+nav button.active {
+  background: linear-gradient(135deg, rgba(255,159,10,.95), rgba(255,122,0,.95));
+  color: #1a0e00; box-shadow: 0 6px 24px rgba(255,159,10,.4);
+}
+nav button.active .badge { background: rgba(26,14,0,.85); color: #ffb340; }
+.badge { background: rgba(255,159,10,.16); color: #ffb340; }
+.kpi-big .num { background: linear-gradient(135deg, #ffffff, #ffd60a 55%, #ff9f0a); -webkit-background-clip: text; background-clip: text; }
+.kpi.warn .num { background: linear-gradient(135deg, #ffb340, #ff5722); -webkit-background-clip: text; background-clip: text; }
+.kpi.good .num { background: linear-gradient(135deg, #ffffff, #ffd60a); -webkit-background-clip: text; background-clip: text; }
+.f-bar, .bar-row .bar { background: linear-gradient(90deg, #ffffff, #ffd60a, #ff9f0a); box-shadow: 0 4px 16px rgba(255,159,10,.30); }
+.avatar { background: linear-gradient(135deg, #3a3a3f, #1c1c1f); color: #ffb340; box-shadow: 0 4px 14px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.12); }
+.avatar-person { background: linear-gradient(135deg, #4a3418, #1c1c1f); }
+.controls a.btn { background: linear-gradient(135deg, #ff9f0a, #ff7a00); color: #1a0e00; box-shadow: 0 6px 18px rgba(255,159,10,.35); }
+.controls input:focus, .controls select:focus { border-color: rgba(255,159,10,.6); box-shadow: 0 0 0 3px rgba(255,159,10,.18); }
+.modal-overlay { background: rgba(0,0,0,.72); }
+.flash { color: #ffb340; border: 1px solid rgba(255,159,10,.4); }
+.pill.applied { background: rgba(255,214,10,.15); color: #ffd60a; }
+.pill.packet { background: rgba(255,255,255,.12); color: #e8e8ec; }
+.pill.hold, .pill.confirm, .pill.due { background: rgba(255,159,10,.18); color: #ffb340; }
+.pill.urgent { background: rgba(255,87,34,.30); color: #ff8a5c; }
+.pill.sent, .pill.march { background: rgba(255,255,255,.14); color: #ffffff; }
+.pill.skip, .pill.todo, .pill.ok { background: rgba(255,255,255,.07); color: var(--muted); }
