@@ -51,32 +51,63 @@ def apply_overrides(rows, kind):
     return rows
 
 
-def dedupe_outreach():
-    seen = set()
-    out = []
+def build_pipeline():
+    explicit = load("pipeline_explicit.json")
+    leads = load("pipeline_leads.json")
+    for r in explicit:
+        r["List"] = "Explicit March"
+    for r in leads:
+        r["List"] = "Confirm March"
+    return apply_overrides(explicit + leads, "pipeline")
+
+
+def build_people():
+    ov = load_overrides()
+    sent_by_li = {}
     for row in load("outreach_sent.json") + load("outreach_log.json"):
-        key = (row.get("PEOPLES", ""), row.get("WHERE", ""))
-        if key in seen:
-            continue
-        seen.add(key)
-        out.append({
-            "name": row.get("PEOPLES", ""),
-            "linkedin": row.get("WHERE", ""),
-            "company": row.get("WHAT", ""),
-            "role": row.get("POSITION + INTEREST", ""),
-            "status": next((v for k, v in row.items() if v in ("SENT", "REPLIED", "IGNORED")), ""),
+        li = (row.get("WHERE") or "").rstrip("/")
+        is_sent = any(str(v).upper() == "SENT" for v in row.values())
+        if li and is_sent:
+            sent_by_li[li] = row
+    people = []
+    seen = set()
+    for c in load("contacts.json"):
+        li = (c.get("LinkedIn") or "").rstrip("/")
+        s = sent_by_li.get(li)
+        people.append({
+            "Name": c.get("Name", ""),
+            "Company": c.get("Company", ""),
+            "Position": c.get("Job Title", ""),
+            "Relevance": (c.get("Category", "") + (" · " + c.get("List", "") if c.get("List") else "")).strip(" ·"),
+            "LinkedIn": li,
+            "Status": "Sent" if s else "",
         })
-    return out
+        if li:
+            seen.add(li)
+    for li, r in sent_by_li.items():
+        if li in seen or not r.get("PEOPLES"):
+            continue
+        li = li.rstrip("/")
+        people.append({
+            "Name": r.get("PEOPLES", ""),
+            "Company": r.get("WHAT", ""),
+            "Position": r.get("POSITION + INTEREST", ""),
+            "Relevance": r.get("POSITION + INTEREST", ""),
+            "LinkedIn": li,
+            "Status": "Sent",
+        })
+    for i, p in enumerate(people):
+        v = ov.get("people:%d:Status" % i)
+        if v is not None:
+            p["Status"] = "Sent" if v == "Sent" else ""
+    return people
 
 
 def build_payload():
     return {
-        "explicit": apply_overrides(load("pipeline_explicit.json"), "explicit"),
-        "leads": apply_overrides(load("pipeline_leads.json"), "leads"),
-        "closed": load("closed_rejected.json"),
+        "pipeline": build_pipeline(),
+        "people": build_people(),
         "readme": load("readme.json"),
-        "outreach": dedupe_outreach(),
-        "contacts": load("contacts.json"),
         "holds": load("holds.json"),
         "tasks": load("tasks.json"),
     }
@@ -113,11 +144,10 @@ class Handler(BaseHTTPRequestHandler):
         if path == "/api/data":
             return self._send_json(build_payload())
         if path == "/api/export.csv":
-            kind = "explicit"
-            rows = build_payload()[kind]
-            fields = ["Company", "Role", "Family", "Start (March 2027)", "Duration",
+            rows = build_payload()["pipeline"]
+            fields = ["List", "Company", "Role", "Family", "Start (March 2027)", "Start stated", "Duration",
                       "Pay (SGD/month)", "Application deadline", "Portal link",
-                      "Notes / eligibility flags", "Application status"]
+                      "Notes / eligibility flags", "Note", "Application status"]
             return self._send(200, to_csv(rows, fields), "text/csv; charset=utf-8")
         if path.startswith("/static/"):
             return self._serve_static(path[len("/static/"):])
@@ -142,7 +172,7 @@ class Handler(BaseHTTPRequestHandler):
                 index = int(body["index"])
                 field = body["field"]
                 value = body["value"]
-                if kind not in ("explicit", "leads"):
+                if kind not in ("pipeline", "people"):
                     raise ValueError("bad kind")
             except Exception:
                 return self._send_json({"error": "bad request"}, 400)

@@ -1,6 +1,6 @@
 # internship-dash
 
-internship search dashboard.
+internship search dashboard — March 2027, Singapore, BBA profile.
 
 ## Run
 
@@ -9,21 +9,23 @@ python3 app.py
 # open http://localhost:8787
 ```
 
-Binds to `127.0.0.1` only. Default port is **8787** (3000 is often taken by other local apps — if the port is busy the app prints a clear error; override with `PORT=3000 python3 app.py` or any free port via the `PORT` env var). Python 3.8+ standard library only — no pip install needed.
+Binds to `127.0.0.1` only. Default port **8787** (`PORT`/`HOST` env vars override; clear error if busy).
+Python 3.8+ standard library only — no pip install needed. Liquid-glass UI, no build step, no CDN.
 
-## What's inside
+## Tabs
 
-- **Overview** — KPIs (explicit March 2027 matches, leads, applied, packets ready, holds, deadlines ≤ 7 days, outreach sent, contacts), status donut, role-family and contact-category charts, deadline table with days-left pills, blockers.
-- **Pipeline** — the explicit March 2027 matches: search, family/status filters, deadline countdown, editable status dropdown (saved locally to `data/overrides.json`), portal links, notes/eligibility flags. CSV export at `/api/export.csv`.
-- **Leads** — roles where a March start still needs confirming.
-- **Outreach** — sent LinkedIn outreach log + SG-50 contact list (search + category filter).
-- **Archive** — closed/rejected records with rejection reasons, searchable.
-- **About** — search criteria/method, tasks, run instructions.
+- **Overview** — KPIs (relevant roles, explicit-March, applied, packets ready, deadlines ≤ 7d, people contacted),
+  status donut, family bars, deadline table with days-left pills, blockers.
+- **Pipeline** — explicit-March roles + confirm-March leads in one table. Filters: search, **BBA-relevant only**
+  (default on; hides tech/IT/cyber/security/engineering/quant roles), **Explicit March only**. Status dropdown per
+  row (saved locally), portal links, notes/eligibility flags, CSV export (`/api/export.csv`).
+- **Outreach** — one list of people: Name, Company, Position, Why connect, LinkedIn, Status (sent / not sent, editable).
+- **About** — search criteria/method, blockers/tasks, run help.
 
 ## Files
 
 - `app.py` — stdlib HTTP server (`/`, `/static/*`, `/api/data`, `/api/override`, `/api/export.csv`)
-- `static/` — single-page UI (vanilla JS, inline SVG charts, no CDN)
-- `data/*.json` — exported from the Google Drive sheet `AI HQ → Projects → INTERNSHIPSTER → "March 2027 Internships - Singapore"` on 2026-11-23; `data/overrides.json` holds local status edits (gitignored)
-- `src/` — raw sheet text exports used by `parse_sheets.py` to rebuild `data/*.json`
-- `parse_sheets.py` — re-export helper (re-run after re-reading the Drive sheet to refresh the JSON)
+- `static/` — SPA (vanilla JS, inline SVG charts) + `logo.svg` (brand mark, also the favicon)
+- `data/*.json` — exported 2026-11-23 from the Drive sheet `AI HQ → Projects → INTERNSHIPSTER → "March 2027 Internships - Singapore"`
+  plus `Au MINE IN/SH - lenny` (contacts/outreach). Local edits persist in gitignored `data/overrides.json`.
+- `src/` + `parse_sheets.py` — re-export pipeline to refresh `data/*.json` from the Drive sheet

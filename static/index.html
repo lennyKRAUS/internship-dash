@@ -4,28 +4,31 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Internship HQ — March 2027 Singapore</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%AF%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="/static/logo.svg?v=3">
 <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
 <header>
-  <h1>Internship HQ</h1>
-  <span class="sub">March 2027 · Singapore · sourced from Drive: AI HQ → Projects → INTERNSHIPSTER</span>
-  <nav id="tabs">
-    <button data-tab="overview" class="active">Overview</button>
-    <button data-tab="pipeline">Pipeline <span id="badge-pipeline" class="badge"></span></button>
-    <button data-tab="leads">Leads <span id="badge-leads" class="badge"></span></button>
-    <button data-tab="outreach">Outreach <span id="badge-outreach" class="badge"></span></button>
-    <button data-tab="archive">Archive</button>
-    <button data-tab="about">About</button>
-  </nav>
+  <div class="nav-glass">
+    <div class="brand">
+      <img src="/static/logo.svg?v=3" alt="Internship HQ logo" class="logo">
+      <div>
+        <h1>Internship HQ</h1>
+        <span class="sub">March 2027 · Singapore · BBA @ emlyon</span>
+      </div>
+    </div>
+    <nav id="tabs">
+      <button data-tab="overview" class="active">Overview</button>
+      <button data-tab="pipeline">Pipeline <span id="badge-pipeline" class="badge"></span></button>
+      <button data-tab="outreach">Outreach <span id="badge-outreach" class="badge"></span></button>
+      <button data-tab="about">About</button>
+    </nav>
+  </div>
 </header>
 <main>
   <section id="tab-overview" class="tab active"></section>
   <section id="tab-pipeline" class="tab"></section>
-  <section id="tab-leads" class="tab"></section>
   <section id="tab-outreach" class="tab"></section>
-  <section id="tab-archive" class="tab"></section>
   <section id="tab-about" class="tab"></section>
 </main>
 <script src="/static/app.js"></script>
