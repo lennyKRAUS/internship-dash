@@ -332,3 +332,48 @@ th { background: rgba(255,255,255,.55); }
 .bubble-sub { color: var(--muted); font-weight: 600; font-size: 12px; }
 .bubble-why { color: var(--muted); font-size: 12px; }
 .bubble-link { color: #7c6cf0; font-size: 12px; font-weight: 700; text-decoration: none; margin-top: 3px; }
+
+/* ---- dreamy nature backdrop + greyer, more transparent glass ----
+   Photo backdrop (generated, static/backdrop.jpg) shows through thin grey
+   glass so panels read as actual glass; soft white veil keeps text readable. */
+:root {
+  --accent1: #9be7b4;
+  --accent2: #7cc4f8;
+  --accent3: #d9f2ff;
+  --glass: linear-gradient(180deg, rgba(255,255,255,.40), rgba(198,206,214,.20));
+  --glass-strong: linear-gradient(180deg, rgba(255,255,255,.72), rgba(214,222,230,.45));
+  --glass-border: rgba(255,255,255,.55);
+  --rim: inset 0 1px 0 rgba(255,255,255,.95), inset 0 -1px 0 rgba(255,255,255,.22), inset 1px 0 0 rgba(255,255,255,.3);
+}
+body {
+  background: #cfe0d8 url("/static/backdrop.jpg") center / cover no-repeat fixed;
+}
+body::before {
+  background: linear-gradient(180deg, rgba(255,255,255,.34), rgba(255,255,255,.10) 45%, rgba(255,255,255,.24));
+  filter: none;
+}
+.nav-glass, .panel, .chart, .kpi, .kpi-big, .modal, .controls input, .controls select, .controls label.toggle, select.status, select.ostatus, .bubble {
+  backdrop-filter: blur(26px) saturate(1.5) brightness(1.05);
+  -webkit-backdrop-filter: blur(26px) saturate(1.5) brightness(1.05);
+}
+.nav-glass::before, .panel::before, .chart::before, .kpi::before, .kpi-big::before, .modal::before {
+  background: linear-gradient(135deg, rgba(255,255,255,.75), rgba(255,255,255,.35) 30%, rgba(200,225,255,.25) 60%, rgba(155,231,180,.4));
+}
+.kpi-big .num {
+  background: linear-gradient(135deg, #3ecf8e, #3aa0f0 60%, #7cc4f8);
+  -webkit-background-clip: text; background-clip: text;
+}
+nav button.active {
+  background: linear-gradient(135deg, #9be7b4, #7cc4f8 55%, #d9f2ff);
+  color: #173a2a;
+  box-shadow: 0 6px 18px rgba(60, 160, 120, .35);
+}
+nav button.active .badge { color: #2a7a5a; }
+.f-bar { background: linear-gradient(90deg, #9be7b4, #7cc4f8, #d9f2ff); box-shadow: 0 4px 14px rgba(90, 180, 240, .45); }
+.bar-row .bar { background: linear-gradient(90deg, #9be7b4, #7cc4f8, #d9f2ff); }
+.avatar { background: linear-gradient(135deg, #7cc4f8, #9be7b4); box-shadow: 0 4px 12px rgba(90, 180, 240, .4); }
+.avatar-person { background: linear-gradient(135deg, #9be7b4, #7cc4f8); }
+.controls a.btn { background: linear-gradient(135deg, #6fd3a0, #6fb6f5); box-shadow: 0 6px 16px rgba(90, 180, 240, .4); }
+.modal-overlay { background: rgba(35, 60, 50, .28); }
+tbody tr { background: rgba(255,255,255,.30); }
+th { background: rgba(255,255,255,.5); }
