@@ -1,0 +1,94 @@
+Sheet: Sheet1
+PEOPLES,WHERE,WHAT,POSITION + INTEREST,Unnamed: 4,2026-11-16 00:00:00,Unnamed: 6
+ERIC BARBIER,https://www.linkedin.com/in/ericbarbier/,TRIPLE-A CEO,FRENCH TECH SG PRESIDENT + FCCS BOARD MEMBER,AUGUSTIN BARBIER YO,SENT,nan
+PRACHI KONGARI,https://www.linkedin.com/in/prachikongari/,AIRWALLEX,TALENT ACQUISITION,nan,SENT,nan
+ESTELLA PEH,https://www.linkedin.com/in/estella-peh-ch/,STANDARD CHARTERED,ASSOCI ATE AND LEFT NO CRUMBS,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+CYRILE BERSWEILER,https://www.linkedin.com/in/cyrilebersweiler/,nan,nan,nan,nan,nan
+nan,https://www.linkedin.com/in/jatinkhanna1,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+"Hi Estella, I’m currently looking for a 6 month finance internship in Singapore starting in March 2027 and came across your profile. I’d love to connect and chat about any potential opportunities!",nan,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+[16/11/26 5:21 PM] Claudysseus: I can't generate and send an actual `.xlsx` file over this chat — but here's the next best thing: **CSV text you can copy straight into Excel or Google Sheets.**,nan,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+📋 **How to use it:** copy everything in the block below → paste into cell A1 of a blank sheet → in Excel use *Data > Text to Columns > Delimited > Comma* (Google Sheets splits it automatically).,nan,nan,nan,nan,nan,nan
+nan,nan,nan,nan,nan,nan,nan
+```,nan,nan,nan,nan,nan,nan
+Name,Job Title,Company,Location,Category,List,LinkedIn
+Asia Finance,Fintech Company,Asia Finance,Singapore,Fintech & Payments,SG 50,https://www.linkedin.com/in/asiafinance
+Jatin Khanna,Head of FinTech & Innovation,Maybank,Singapore,Fintech & Payments,SG 50,https://www.linkedin.com/in/jatinkhanna1
+Aadarsh Saxena,Senior Strategy and Operations Manager,Revolut,Singapore,Fintech & Payments,SG 50,nan
+Eugene C.,Product Operations - Enterprise,Stripe,Singapore,Fintech & Payments,SG 50,https://www.linkedin.com/in/eugenechanyc
+Clarence Choy,Product Specialist,Wise,Singapore,Fintech & Payments,SG 50,https://www.linkedin.com/in/choyclarence
+Qiwen Yin,Senior Compliance Analyst (EDD),Airwallex,Singapore,Fintech & Payments,SG 50,https://www.linkedin.com/in/yinqiwen
+Prachi Kongari,Talent Acquisition,Airwallex,Singapore,Fintech & Payments,SG 50,https://www.linkedin.com/in/prachikongari
+August Ong,Senior Growth Manager,Tazapay,Singapore,Fintech & Payments,SG 50,https://www.linkedin.com/in/augustongwe
+Narinderpal Singh Dhillon,Chief Technology Officer,Paywho,Singapore,Fintech & Payments,SG 50,https://www.linkedin.com/in/narinsd
+Ronald Kan,Staff Engineer,StashAway,Singapore,Fintech & Payments,SG 50,https://www.linkedin.com/in/ronaldkanwl
+Noi Keng Koh,Senior Lecturer,FinTech Academy Pte Ltd,Singapore,Fintech & Payments,SG 50,https://www.linkedin.com/in/noi-keng-koh-2312111a
+Kevin Xiong J. K.,Head of Agency Distribution (Insurtech),DirectAsia Insurance,Singapore,Fintech & Payments,SG 50,https://www.linkedin.com/in/kevin-xiong-j-k-4b5ab9131
+Phan Nguyen,Artificial Intelligence Engineer,TikTok,Singapore,AI Data & Engineering,SG 50,https://www.linkedin.com/in/phannguyen0605
+Ling Yit Wong,Head of AI,BJAK,Singapore,AI Data & Engineering,SG 50,https://www.linkedin.com/in/ling-yit-wong-83772b178
+Alan Dao,AI Researcher,Menlo Research,Singapore,AI Data & Engineering,SG 50,https://www.linkedin.com/in/alandao-jan
+Khai Kit W.,Machine Learning Engineer,CSIT,Singapore,AI Data & Engineering,SG 50,https://www.linkedin.com/in/khai-kit-wong
+Jaymee Song,Data Scientist,Seagate Technology,Singapore,AI Data & Engineering,SG 50,https://www.linkedin.com/in/jaymeesong
+Zijun Kan,Software Engineer,Google,Singapore,AI Data & Engineering,SG 50,https://www.linkedin.com/in/kanzijun
+Abhi Goswami,Generative AI Specialist,MS2 Entertainment LLP,Singapore,AI Data & Engineering,SG 50,https://www.linkedin.com/in/augela-goh-2345
+Praveen Shetty,Director Engineering Lead,Standard Chartered,Singapore,AI Data & Engineering,SG 50,https://www.linkedin.com/in/praveenshettym
+Alvaro Garrido,COO Tech & Ops / Chief Data & AI Officer,Monetary Authority of Singapore,Singapore,AI Data & Engineering,SG 50,https://www.linkedin.com/in/garridoalvaro
+Nigel Chen,Relationship Manager,DBS Bank,Singapore,Banking & Financial Services,SG 50,https://www.linkedin.com/in/nigel-chen-ba8184259
+Alison Lee,KYC Senior Associate IBG,DBS Bank,Singapore,Banking & Financial Services,SG 50,https://www.linkedin.com/in/alisonqueenie
+Eric Chua H P,Vice President,UOB,Singapore,Banking & Financial Services,SG 50,https://www.linkedin.com/in/eric-chua-h-p-62677034
+Lim Choo Er,Manager Risk Analytics and Modelling,UOB,Singapore,Banking & Financial Services,SG 50,https://www.linkedin.com/in/chooerlim
+Xueyang L.,Product Manager,Bank of China Singapore Branch,Singapore,Banking & Financial Services,SG 50,https://www.linkedin.com/in/lai-xueyang
+Estella Peh,Transaction Banking Digital Graduate,Standard Chartered Singapore,Singapore,Banking & Financial Services,SG 50,https://www.linkedin.com/in/estella-peh-ch
+Sandy Guo,Client Relationship Manager,Goldman Sachs,Singapore,Banking & Financial Services,SG 50,https://www.linkedin.com/in/sandy-guo-42
+[16/11/26 5:21 PM] Claudysseus: b752141,nan,nan,nan,nan,nan
+Judy Ji,Vice President,J.P. Morgan,Singapore,Banking & Financial Services,SG 50,https://www.linkedin.com/in/judy-ji-65740790
+Kinczel Tan,Not specified,Deutsche Bank,Singapore,Banking & Financial Services,SG 50,https://www.linkedin.com/in/kinczel-tan
+Prem Xavier Raj,Executive Director - Private Banking,Indosuez Wealth Management,Singapore,Banking & Financial Services,SG 50,https://www.linkedin.com/in/prem-xavier-raj
+Lee Eng Goh,Managing Director,LGT Private Banking,Singapore,Banking & Financial Services,SG 50,https://www.linkedin.com/in/lee-eng-goh-829293229
+Meixiao Huang,Senior Associate,Temasek,Singapore,Investment VC & Asset Mgmt,SG 50,https://www.linkedin.com/in/meixiao-huang-8a37523
+Sook Ying Hoong,Manager,GIC,Singapore,Investment VC & Asset Mgmt,SG 50,https://www.linkedin.com/in/sook-ying-hoong-7451178a
+Aakash Kapoor,Investor India and SEA,Peak XV Partners,Singapore,Investment VC & Asset Mgmt,SG 50,https://www.linkedin.com/in/aakash-kapoor-792a2b40
+Ong Wan Qi,VC Lead,Rouge International & Rouge Ventures,Singapore,Investment VC & Asset Mgmt,SG 50,https://www.linkedin.com/in/ongwanqi
+Milena Nikolova,Board of Trustees Member Chair of FARco,Antares Ventures,Singapore,Investment VC & Asset Mgmt,SG 50,https://www.linkedin.com/in/milena-nikolova-vatchkova
+Ben L.,Mentor,Treehouse Labs,Singapore,Investment VC & Asset Mgmt,SG 50,https://www.linkedin.com/in/benlk
+Peter Monson CFA,Investment Analyst,Putnam Investments,Singapore,Investment VC & Asset Mgmt,SG 50,https://www.linkedin.com/in/peter-monson-cfa-5a124415
+Milind Pandit,Quantitative Analyst,Macquarie Group,Singapore,Investment VC & Asset Mgmt,SG 50,https://www.linkedin.com/in/milindpandit
+Michelle Er,Merchant Success,Grab,Singapore,Business & Strategy,SG 50,https://www.linkedin.com/in/michelle-er
+Alex Pyng,Chief Financial Officer,Thye Hua Kwan Moral Charities,Singapore,Business & Strategy,SG 50,https://www.linkedin.com/in/alex-pyng-87932a0
+Hariharan Nair,Manager (Strategy),NTUC,Singapore,Business & Strategy,SG 50,https://www.linkedin.com/in/h-nair
+Win Zaw Aung,Managing Director,Sea Lion,Singapore,Business & Strategy,SG 50,https://www.linkedin.com/in/win-zaw-aung-47925213b
+Bernadette Inah Pantaleon,Founder,Knight,Singapore,Business & Strategy,SG 50,https://www.linkedin.com/in/bernadette-inah-pantaleon
+JMS Rogers BD Division,Business Development Manager,JMS ROGERS,Singapore,Business & Strategy,SG 50,https://www.linkedin.com/in/jmsbd
+Ninon Z.,Business Advisor - Health & Lifestyle,French Chamber of Commerce in Singapore (FCCS),Singapore,FCCS Direct,French Ecosystem,https://www.linkedin.com/in/ninon-z-8971a42a4
+Yue Xi Joyce Hui,Corporate Services Executive,French Chamber of Commerce in Singapore (FCCS),Singapore,FCCS Direct,French Ecosystem,https://www.linkedin.com/in/joycehuiyx
+Baptiste Leblanc,Business Developer,French Chamber of Commerce in Singapore (FCCS),Singapore,FCCS Direct,French Ecosystem,https://www.linkedin.com/in/baptiste-leblanc-8b8631221
+Marine Queniart-Stojanovic,Board Director and Co-President Healthcare Committee,Prezent / FCCS,Singapore,FCCS Affiliated,French Ecosystem,https://www.linkedin.com/in/marine-queniart-stojanovic
+Tanguy Baudoin,Community Organizer Chapter Data AI & Analytics,Thales Cyber and Digital / La French Tech,Singapore,French Tech,French Ecosystem,https://www.linkedin.com/in/tanguy-baudoin
+Aurore Duhamel,Community Lead,Microsoft / La French Tech,Singapore,French Tech,French Ecosystem,https://www.linkedin.com/in/aurore-duhamel-33158284
+Cyril Ebersweiler,Partner / Keynote Speaker,SOSV,Singapore,French Tech,French Ecosystem,https://www.linkedin.com/in/cyrilebersweiler
+Cindy G.,Founder & CEO,VIKTOR & SASHA,Singapore,French Tech,French Ecosystem,https://www.linkedin.com/in/cindygizard
+Arthur Le Vaillant,Founder,LA MAISON DU WHISKY,Singapore,French Tech,French Ecosystem,https://www.linkedin.com/in/arthur-le-vaillant
+
+Sheet: Hermes Tasks
+Task,Details,Status,Created (UTC),Due Date,Result URL
+Connect Hermes to Google Drive,Drive file storage and task logging are available through the folder-scoped connector.,done,2026-10-24T23:41:42+00:00,nan,https://drive.google.com/file/d/1076pgq80xkfislZZb7woKuf2qhZkvv-f/view?usp=drivesdk
+Save internship pipeline deliverables to Google Drive,"Save Tracker.csv, SHORT-LIST.md, 14 drafts + INDEX, and clean resumes into the STAGE INTERNSHIP LENNY Drive folder.",open,2026-10-25T13:04:32+00:00,nan,nan
