@@ -1,0 +1,611 @@
+[
+ {
+  "Company": "OCBC Bank",
+  "Role": "2027 internship cycles (110 live postings scanned on Workday, incl. Global Markets, Global Investment Banking DCM, GCFS, Group Risk Management)",
+  "Status": "open",
+  "Reason": "REJECTED for start date. Full scan of OCBC Workday (searchText 'internship 2027', 110 postings, plus 'March' search) on 2026-11-19 found NO March 2027 START cycle: live cycles are Jan - May 2027, Jan - Jun 2027, Dec 2026 - Jun 2027, and Sep 2026 - Mar 2027 (ends March). The Sep - Mar 2027 roles (Global Markets Futur...",
+  "Link": "https://ocbc.wd102.myworkdayjobs.com/External/job/OCBC-Singapore/Internship--Group-Operations---Technology--Trade-Finance-Operations---Structured-Trade-Middle-Office--September-2026---March-2027-_JR00010942"
+ },
+ {
+  "Company": "DBS Bank",
+  "Role": "2027 DBS Internship (Business and Support Units) / (Technology and AI & Data Science)",
+  "Status": "open",
+  "Reason": "REJECTED: no March 2027 start cycle. Singapore cycles are January to July, May to August and July to December 2027 (confirmed via foundit.sg guide and jorb.ai, consistent with official programme). Rolling admissions; apply early.",
+  "Link": "https://linkedin.com/jobs/view/2027-dbs-internship-business-and-support-units-at-dbs-bank-4480335954"
+ },
+ {
+  "Company": "Standard Chartered",
+  "Role": "Singapore 2027 internships: Global Banking, Markets, M&A CIB, Transaction Services, Strategic Advisory & Solutions, Wealth & Retail Banking",
+  "Status": "open",
+  "Reason": "REJECTED: June 2027 start (not March) and 10 weeks (<4 months). All six SG 2027 internship postings checked on official portal share the June 2027 / 10-week structure.",
+  "Link": "https://jobs.standardchartered.com/job/Global-Banking-Intern-Singapore-2027/59094-en_GB"
+ },
+ {
+  "Company": "UBS",
+  "Role": "2027 Off-Cycle Internship - Global Banking - Singapore",
+  "Status": "unclear",
+  "Reason": "NOT explicit March - kept as a lead only. Off-cycle internships often start Jan/Feb or Jul/Aug; start month must be confirmed with UBS. Eligibility: graduating between December 2027 and June 2028; knowledge of Mandarin/Hindi/Thai/Vietnamese/Bahasa Indonesian. Posted on MCF 2026-07-06. Verified via MyCareersFuture AP...",
+  "Link": "https://mycareersfuture.gov.sg/job/banking-finance/2027-off-cycle-internship-global-banking-singapore-ubs-ag-d78f9da415bb418cf526ae8f5d061096"
+ },
+ {
+  "Company": "JPMorgan Chase",
+  "Role": "2027 Markets Quantitative Trading & Research Analyst Program - Off-Cycle Internship - Singapore (and Associate variant)",
+  "Status": "open",
+  "Reason": "NOT explicit March - lead only; off-cycle start month unstated. Requires Master's in a quantitative field and graduation beyond December 2027, so likely out of reach for a diploma/undergrad student. Application deadline 29 Nov 2026 is near. LinkedIn job id 4467273533.",
+  "Link": "https://builtin.com/job/2027-markets-quantitative-trading-research-analyst-program-cycle-internship-singapore/11154125"
+ },
+ {
+  "Company": "KKR",
+  "Role": "Internship (6 months) - Global Client Solutions - Singapore",
+  "Status": "closed",
+  "Reason": "Official Greenhouse posting (job 6022053004) returns 404 'Job not found' on both job-boards.greenhouse.io and the Greenhouse API as of 2026-11-19 - removed/closed. Aggregator mirrors (efinancialcareers, LinkedIn 4430270410, posted Jul-Aug 2026) remain but state no start month, so it would not qualify as explicit Mar...",
+  "Link": "https://efinancialcareers.sg/jobs-Singapore-Singapore-Internship_6_months_-_Global_Client_Solutions_-_Singapore.id24452552"
+ },
+ {
+  "Company": "Stripe",
+  "Role": "Financial Data Analyst Intern, Technical Operations",
+  "Status": "unclear",
+  "Reason": "Strong family match (financial data at a payments fintech) but NO explicit March start - lead only. Posted 24 Sep 2026, still mirrored on efinancialcareers/builtin. Requires Bachelor's/Master's/PhD in CS, data science, finance, economics or IS; SQL/Python. Confirm intake dates on stripe.com/jobs (official Greenhouse...",
+  "Link": "https://jobs.a16z.com/jobs/stripe/8186442--financial-data-analyst-intern-technical-operations"
+ },
+ {
+  "Company": "Morgan Stanley",
+  "Role": "2027 Institutional Equity Division Early Careers Program (HK / Singapore)",
+  "Status": "open",
+  "Reason": "REJECTED: 12 months (>6) and aimed at working professionals, not a student internship.",
+  "Link": "https://efinancialcareers.sg/jobs-Singapore-Singapore-2027_Institutional_Equity_Division_Early_Careers_Program_Hong_Kong__Singapore.id24884206"
+ },
+ {
+  "Company": "EDB (Economic Development Board)",
+  "Role": "EDB Associate Programme 2027",
+  "Status": "open",
+  "Reason": "REJECTED: explicit 1 March 2027 start BUT 10-month graduate programme for fresh graduates/early careerists (<2 years experience), not a 4-6 month student internship.",
+  "Link": "https://jobs.careers.gov.sg/jobs/hrp/18015522/005056a3-d347-1fe1-afba-b2c31b68e2bf"
+ },
+ {
+  "Company": "EDB (Economic Development Board)",
+  "Role": "EDB Summer Internship 2027",
+  "Status": "open",
+  "Reason": "REJECTED: May 2027 start, 12 weeks (<4 months). March 2027 is only the application window.",
+  "Link": "https://builtin.com/job/edb-summer-internship-2027/12259959"
+ },
+ {
+  "Company": "Capco",
+  "Role": "Associate Talent Programme 2027",
+  "Status": "open",
+  "Reason": "REJECTED: full-time graduate job, not an internship.",
+  "Link": "https://job-boards.greenhouse.io/capco/jobs/8333467"
+ },
+ {
+  "Company": "HSBC",
+  "Role": "Markets - Sales and Trading - Off-Cycle Internship (March 2027)",
+  "Status": "closed",
+  "Reason": "REJECTED: wrong location (HK, requires legal right to work in HK without sponsorship) and 10 weeks (<4 months). No equivalent Singapore March 2027 off-cycle found.",
+  "Link": "https://apply.careers.hsbc.com/emergingtalent/job/Central-Markets-Sales-and-Trading-Off-Cycle-Internship-HK/1371076057"
+ },
+ {
+  "Company": "Temasek",
+  "Role": "2027 off-cycle internships (Data & Finance Intern, AI & Analytics Intern Financial Management, etc.) and Summer Internship Programme 2027",
+  "Status": "open",
+  "Reason": "REJECTED: January 2027 start, not March. No March-start Temasek internship found on official portal 2026-11-19.",
+  "Link": "https://jobs.temasek.com.sg/job/Data-&-Finance-Intern%2C-Finance-%28Governance-%26-Technology%29-Jan-Jun-2027-238891/1369148557"
+ },
+ {
+  "Company": "Fullerton Fund Management",
+  "Role": "Fullerton Singapore Value-Up (FSGV) Internship Programme (via Fullerton/SGX Value-Up Equities Challenge)",
+  "Status": "open",
+  "Reason": "REJECTED: May 2027 start and ~8 months (>6). Entry is via the student equities challenge (SG Citizens/PR, expected graduation 2027), not a direct internship application.",
+  "Link": "https://fullertonfund.com/valueupsgchallenge-students"
+ },
+ {
+  "Company": "Lion Global Investors",
+  "Role": "Intern, Fixed Income",
+  "Status": "open",
+  "Reason": "REJECTED: January 2027 start, not March. No March-start Lion Global posting found.",
+  "Link": "https://internsg.com/job/lion-global-investors-ltd-intern-fixed-income-3"
+ },
+ {
+  "Company": "AIA Singapore",
+  "Role": "AIA Corporate Internship 2027 (insurance; incl. Business Underwriting, Audit, Data Analytics, AML roles)",
+  "Status": "open",
+  "Reason": "REJECTED: May 2027 start, 12 weeks (<4 months). Deadline 30 Nov 2026 is near if user ever wants a summer option.",
+  "Link": "https://linkedin.com/jobs/view/aia-corporate-internship-2027-at-aia-singapore-4481564572"
+ },
+ {
+  "Company": "KPMG Singapore",
+  "Role": "Advisory - Consulting, Forensic Technology | Polytechnic Internship (Mar 2027 to Aug 2027)",
+  "Status": "open",
+  "Reason": "REJECTED for role family only: explicit March 2027 intake, 6 months, genuine internship, but the work is digital evidence collection/eDiscovery (EnCase, Nuix, Relativity) and it asks for 'Pursuing degree in Computer Science, Cybersecurity or related fields'. If the user also wants tech roles, this is a verified Marc...",
+  "Link": "https://careers.kpmg.com.sg/job/Advisory-Consulting,-Forensic-Technology-Polytechnic-Internship-(Mar-2027-to-Aug-2027)/60283644"
+ },
+ {
+  "Company": "KPMG Singapore",
+  "Role": "Tax - Managed Services | Polytechnic Internship (Feb 2027 to Sep 2027)",
+  "Status": "open",
+  "Reason": "REJECTED: February 2027 start (not March) and 8 months (>6).",
+  "Link": "https://www.glassdoor.sg/job-listing/tax-managed-services-polytechnic-internship-feb-2027-to-sep-2027-kpmg-JV_KO0,64_KE65,69.htm?jl=1010267888311"
+ },
+ {
+  "Company": "Univers (Singapore)",
+  "Role": "SOC L1 Security Analyst Intern (1 Year Internship, March 2027)",
+  "Status": "open",
+  "Reason": "REJECTED: 1-year duration (>6 months) and IT security role family. Explicit March 2027 start noted in case the user's criteria change.",
+  "Link": "https://sg.linkedin.com/jobs/view/soc-l1-security-analyst-intern%C2%A0-1-year-internship-march-2027-at-univers-4489262941"
+ },
+ {
+  "Company": "NRF (National Research Foundation, via careers.gov.sg)",
+  "Role": "[NRF Internship] Growing SG as a Deep Tech Hub: Research Commercialisation (3mths)",
+  "Status": "open",
+  "Reason": "REJECTED: 3 months (<4) and science/tech research family.",
+  "Link": "https://jobs.careers.gov.sg/jobs/hrp/18227718/005056a3-d347-1fe1-b8d2-c91ad96e42c5"
+ },
+ {
+  "Company": "Wise",
+  "Role": "SGP Analytics Intern (Jan Start) / SGP Analytics Intern (July Start)",
+  "Status": "open",
+  "Reason": "REJECTED: Wise Singapore analytics internships start January or July only - no March intake. Jan-start applications open late summer/early autumn (likely already closed for Jan 2027); July-start applications open in spring 2027.",
+  "Link": "https://wise.jobs/internship-programs-at-wise"
+ },
+ {
+  "Company": "Revolut",
+  "Role": "Graduate Programme 2027 (e.g. Applied AI Engineer, Singapore)",
+  "Status": "open",
+  "Reason": "REJECTED: full-time graduate programme, not a student internship (and the SG posting found is an AI engineering role). March 2027 intake exists but fails the internship requirement.",
+  "Link": "https://revolut.com/en-SG/careers/position/graduate-programme-2027-applied-ai-engineer-singapore-d149dd16-43e9-4372-a4f7-e6a9b6d840797"
+ },
+ {
+  "Company": "CIMB",
+  "Role": "Wholesale Banking Internship Programme (WBIP) Singapore",
+  "Status": "open",
+  "Reason": "REJECTED: Jan - Jun / Jul - Dec intakes only; next intake Jan 2027. No March start.",
+  "Link": "https://jorb.ai/firms/cimb"
+ },
+ {
+  "Company": "UOB",
+  "Role": "UOB Internship Programme / Year-Round Internships",
+  "Status": "unclear",
+  "Reason": "REJECTED: main programme starts May (offers signed in March - March is offer timing, not start). Year-round internships (min 10 weeks, Nitec/Diploma/Degree) could theoretically start in March but no explicit March 2027 posting was found in searches on 2026-11-19.",
+  "Link": "https://pib.uob.com.sg/about/careers/graduate_careers/internship.html"
+ },
+ {
+  "Company": "Macquarie",
+  "Role": "Off-Cycle Internship, M&A advisory, January and March 2027 (Paris) / Off-Cycle Internship, Private Credit (Paris, March 2027)",
+  "Status": "open",
+  "Reason": "REJECTED: wrong location (Paris; French fluency required). No Macquarie Singapore March 2027 off-cycle found. Similarly, Nomura's 2027 Global Markets Off-Cycle (Q1 Jan - Mar 2027 windows) is Frankfurt, and Deutsche Bank's March Seasonal 6-month internships are London - none in Singapore.",
+  "Link": "https://recruitment.macquarie.com/en_US/careers/JobDetail/Off-Cycle-Internship-M-A-advisory-January-and-March-2027/23016"
+ },
+ {
+  "Company": "Istana (President's Office, via asktian)",
+  "Role": "[AY2027/28 Internship] Media, Strategy & Communications Intern",
+  "Status": "closed",
+  "Reason": "REJECTED: outside finance family (media/comms), start is a Feb/Mar window not explicit March, and the listing closed 9 Sep 2026. Singaporean only.",
+  "Link": "https://jobs.asktian.com/jobs/cmtbssxfi00ls1boburjsd9zu"
+ },
+ {
+  "Company": "GIC / MAS / Enterprise Singapore",
+  "Role": "No explicit March 2027 finance internship found",
+  "Status": "unclear",
+  "Reason": "Searched 2026-11-19: no GIC, MAS or EnterpriseSG internship posting with an explicit March 2027 start surfaced. GIC/MAS run summer-style programmes; EnterpriseSG's GRT-supported local internships for the current cycle must start by 31 Mar 2026. Re-check GIC/MAS career portals closer to Dec 2026 - Jan 2027.",
+  "Link": "https://beglobalready.gov.sg/internships/local-internships"
+ },
+ {
+  "Company": "BlackRock / Fidelity / Schroders / Amundi / Julius Baer / Pictet / Lombard Odier (Singapore)",
+  "Role": "No explicit March 2027 internship found",
+  "Status": "unclear",
+  "Reason": "Searched 2026-11-19 across these firms' Singapore offerings: only summer (June/July) or Jan-start off-cycle roles surfaced (e.g. UBS Switzerland March 2027 Financial Accounting internship exists but is Switzerland-based). No Singapore March 2027 start found. Julius Baer summer positions go live end of March for a Ju...",
+  "Link": "https://juliusbaer.com/en/about/careers/career-starters/internships"
+ },
+ {
+  "Company": "Partior / Nium / Airwallex / Aspire / Maybank (Singapore)",
+  "Role": "No explicit March 2027 internship found",
+  "Status": "unclear",
+  "Reason": "Multiple targeted searches (company names + 'March 2027' / 'Mar 2027' + internship + Singapore, plus Lever/Greenhouse/Ashby site searches) returned no March 2027 internship postings for these firms. Most post summer or rolling internships. Worth a direct careers-page check in Dec 2026 - Jan 2027.",
+  "Link": ""
+ },
+ {
+  "Company": "Singlife / Great Eastern / Income Insurance",
+  "Role": "No explicit March 2027 finance internship found",
+  "Status": "unclear",
+  "Reason": "Searched 2026-11-19. Insurers' current SG intern postings are tech-oriented (Singlife cyber/software poly internships) or 2026 summer cycles (Income IT Security Awareness). No business-side March 2027 insurance internship found. AIA (see separate entry) is May - Jul 2027 only.",
+  "Link": "https://linkedin.com/jobs/view/intern-cyber-security-cyber-fusion-center-at-singlife-4479355237"
+ },
+ {
+  "Company": "Synapxe",
+  "Role": "Poly Internship Mar 2027 to Feb 2028 - Data Analytics, Automation & AI Intern",
+  "Status": "open",
+  "Reason": "REJECTED: duration 12 months > 6. Entire Synapxe 'Poly Internship Mar 2027 to Feb 2028' batch (AI & Process Optimisation, Vulnerability Management Automation & AI, Digital Workplace Automation & AI, DevSecOps, Private Cloud, SAP Testing, Data Analytics, RPA, Healthcare Data Migration, AI-Powered Test Automation) is ...",
+  "Link": "https://careers-public-healthtech-jobs.synapxe.sg/job/Poly-Internship-Mar-2027-to-Feb-2028-Data-Analytics%2C-Automation-&-AI-Intern/60663344"
+ },
+ {
+  "Company": "National Research Foundation (via careers.gov.sg)",
+  "Role": "[NRF Internship] Growing SG as a Deep Tech Hub: Research Commercialisation (3mths)",
+  "Status": "open",
+  "Reason": "REJECTED: 3 months < 4 minimum; research commercialisation focus, not a tech/software/data role.",
+  "Link": "https://jobs.careers.gov.sg/jobs/hrp/18227718/005056a3-d347-1fe1-b8d2-c91ad96e42c5"
+ },
+ {
+  "Company": "IRAS (via careers.gov.sg)",
+  "Role": "Intern - Ops Technology in Tax Administration (Individual Income Tax)",
+  "Status": "open",
+  "Reason": "REJECTED: starts Nov/Dec 2026 or Jan 2027, not March 2027 (March is an end date).",
+  "Link": "https://jobs.careers.gov.sg/jobs/hrp/18108822/005056a3-d347-1fe1-afbf-e0af7dd2e2bf"
+ },
+ {
+  "Company": "Singapore Land Authority (via careers.gov.sg)",
+  "Role": "Intern, Geodesy & National Mapping",
+  "Status": "open",
+  "Reason": "REJECTED: starts Oct/Nov 2026, not March 2027.",
+  "Link": "https://jobs.careers.gov.sg/jobs/hrp/17842885/005056a3-d347-1fe1-b5a1-431826ffa2c5"
+ },
+ {
+  "Company": "Singapore Land Authority (via careers.gov.sg)",
+  "Role": "Intern, DAT",
+  "Status": "open",
+  "Reason": "REJECTED: starts Oct/Nov 2026, not March 2027.",
+  "Link": "https://jobs.careers.gov.sg/jobs/hrp/17994919/005056a3-53e2-1fd1-a8e3-c67cf4a27406"
+ },
+ {
+  "Company": "Shopee",
+  "Role": "Product Management Intern - Shopee (Spring 2027)",
+  "Status": "closed",
+  "Reason": "REJECTED: official page now shows 'This job has expired' (checked 2026-11-19).",
+  "Link": "https://careers.shopee.sg/job-detail/107221"
+ },
+ {
+  "Company": "Shopee",
+  "Role": "Business Product Manager Intern, Regional Operations (Spring 2027)",
+  "Status": "closed",
+  "Reason": "REJECTED: official page now shows 'This job has expired' (checked 2026-11-19). Role was data analysis + AI agents for regional operations.",
+  "Link": "https://careers.shopee.sg/job-detail/J00284293/1"
+ },
+ {
+  "Company": "ByteDance / TikTok",
+  "Role": "Security Analyst Project Intern (Global Corporate Security Operations Center) - 2027 Start",
+  "Status": "open",
+  "Reason": "REJECTED for explicit list: no explicit March 2027 start; '2027 Start' with rolling applications, duration not stated. SOC detection/threat-hunting work, Python scripting.",
+  "Link": "https://jobs.bytedance.com/en/position/7690422566842386693/detail"
+ },
+ {
+  "Company": "ByteDance / TikTok",
+  "Role": "Product Management Project Intern (Global Payment) - 2027 Start",
+  "Status": "open",
+  "Reason": "REJECTED for explicit list: no explicit March 2027 start; '2027 Start' with rolling applications, duration not stated.",
+  "Link": "https://jobs.bytedance.com/en/position/7673903516842386693/detail"
+ },
+ {
+  "Company": "Carousell Group",
+  "Role": "Social Media Creative Intern (Mar 2027)",
+  "Status": "open",
+  "Reason": "REJECTED: Kuala Lumpur, Malaysia (not Singapore) and marketing role. Carousell SG board checked via SmartRecruiters API: no SG tech internships with March 2027 start (Jan 2027 intakes only).",
+  "Link": "https://jobs.smartrecruiters.com/CarousellGroup/744000152175607-social-media-creative-intern-mar-2027-"
+ },
+ {
+  "Company": "Cynapse Pte Ltd",
+  "Role": "Pre-Sales Technical Engineer Intern",
+  "Status": "open",
+  "Reason": "REJECTED: Nov/Dec 2026 start, not March 2027.",
+  "Link": "https://cynapse.ai/careers/pre-sales-technical-engineer-intern"
+ },
+ {
+  "Company": "Cynapse Pte Ltd",
+  "Role": "AI Evaluation & Quality Intern",
+  "Status": "open",
+  "Reason": "REJECTED: May 2027 start, not March 2027.",
+  "Link": "https://cynapse.ai/careers/ai-evaluation-quality-intern"
+ },
+ {
+  "Company": "Cynapse Pte Ltd",
+  "Role": "Project Management Officer (PMO) / Quality Assurance (QA) Intern",
+  "Status": "open",
+  "Reason": "REJECTED: December 2026 start, not March 2027.",
+  "Link": "https://cynapse.ai/careers/project-management-officer-pmo-quality-assurance-intern"
+ },
+ {
+  "Company": "Cynapse Pte Ltd",
+  "Role": "AI Research & Development Intern",
+  "Status": "open",
+  "Reason": "REJECTED: December 2026 start, not March 2027.",
+  "Link": "https://cynapse.ai/careers/ai-research-development-intern"
+ },
+ {
+  "Company": "foodpanda",
+  "Role": "PowerUp! SG Tech Traineeship",
+  "Status": "open",
+  "Reason": "REJECTED: starts 5 Oct 2026 (March 2027 is the end); traineeship for Singaporeans/PRs, not a March-start internship.",
+  "Link": "https://careers.foodpanda.com/powerup-sg-tech-traineeship"
+ },
+ {
+  "Company": "ShopBack",
+  "Role": "Business & Strategy Analyst Intern (Regional Payments)",
+  "Status": "open",
+  "Reason": "REJECTED: H1 2027 window (no explicit March) and business/strategy family, not tech/data/product.",
+  "Link": "https://jobs.lever.co/shopback-2/431888d3-d08a-43d8-b6fd-f95c3a5ff076"
+ },
+ {
+  "Company": "SPH Media Limited",
+  "Role": "Operations and Communications Intern",
+  "Status": "open",
+  "Reason": "REJECTED: explicit Mar 2027 start but operations/communications role, outside tech/data/product families.",
+  "Link": "https://internsg.com/job/sph-media-limited-operations-and-communications-intern-2"
+ },
+ {
+  "Company": "GSK",
+  "Role": "Polytechnic Internship - Quality Control / QA Operations, Singapore (March 2027 to August 2027)",
+  "Status": "open",
+  "Reason": "REJECTED: lab/pharma quality-control roles, excluded by role-family filter. Not individually verified on GSK portal.",
+  "Link": "https://the-inroad.com/summer-internships/singapore"
+ },
+ {
+  "Company": "KPMG Singapore",
+  "Role": "Advisory - Consulting, Forensic (Non-Tech) | Polytechnic Internship (Mar 2027 - Aug 2027)",
+  "Status": "open",
+  "Reason": "REJECTED: explicitly non-tech forensic/AML/FATCA-CRS work, outside role families.",
+  "Link": "https://careers.kpmg.com.sg/job/Advisory-Consulting,-Forensic-(Non-Tech)-Polytechnic-Internship-(Mar-2027-Aug-2027)/60283444"
+ },
+ {
+  "Company": "VISEO ASIA Pte Ltd",
+  "Role": "SAP Intern / Quality Engineer Intern",
+  "Status": "open",
+  "Reason": "REJECTED: immediate start ending Mar 2027, not a March 2027 start.",
+  "Link": "https://internsg.com/job/viseo-asia-pte-ltd-sap-intern"
+ },
+ {
+  "Company": "Pacific Refreshments Pte Ltd (The Coca-Cola Company)",
+  "Role": "Master Data Intern",
+  "Status": "open",
+  "Reason": "REJECTED: January 2027 start, not March 2027.",
+  "Link": "https://internsg.com/job/pacific-refreshments-pte-ltd-the-coca-cola-company-master-data-intern"
+ },
+ {
+  "Company": "Vontobel",
+  "Role": "Early Careers Internship Program Structured Solutions Sales (100%)",
+  "Status": "closed",
+  "Reason": "REJECTED: application window 5-15 Nov 2026 has passed as of 19 Nov 2026; official page still published but window ended. Consistent with the known Vontobel Early Careers 2027 closure. Would otherwise have matched (explicit 1 March 2027, 6 months).",
+  "Link": "https://vontobel.com/en/about-vontobel/careers/open-positions/9553-early-careers-internship-program-structured-solutions-sales-100"
+ },
+ {
+  "Company": "Edelman",
+  "Role": "Research and Strategy Intern (October 2026 - March 2027)",
+  "Status": "closed",
+  "Reason": "REJECTED: removed 15 Oct 2026 and ENDS in March 2027 (wrong direction). Checked for a new March-September 2027 cycle: none found. Edelman's current Singapore EdelmanNEXT internships (Communications Intern, Research Analyst Intern, Financial Communications Intern) are all Jan to Jun 2027, not March starts; the Financ...",
+  "Link": "https://builtin.com/job/research-and-strategy-intern-october-2026-march-2027/11248302"
+ },
+ {
+  "Company": "Edelman",
+  "Role": "Communications Intern / Research Analyst Intern (Jan to Jun 2027)",
+  "Status": "open",
+  "Reason": "REJECTED: starts January 2027, not March 2027. Listed as the current Edelman cycle in place of a Mar-Sep 2027 cycle.",
+  "Link": "https://builtinsingapore.com/job/communications-intern-jan-jun-2027/11867318"
+ },
+ {
+  "Company": "National Research Foundation (NRF), Prime Minister's Office",
+  "Role": "[NRF Internship] Growing SG as a Deep Tech Hub: Research Commercialisation (3mths)",
+  "Status": "open",
+  "Reason": "REJECTED: 3 months is below the 4-month minimum.",
+  "Link": "https://jobs.careers.gov.sg/jobs/hrp/18227718/005056a3-d347-1fe1-b8d2-c91ad96e42c5"
+ },
+ {
+  "Company": "Singapore Land Authority (SLA)",
+  "Role": "Intern, Strategy & Innovation",
+  "Status": "closed",
+  "Reason": "REJECTED: ends in March 2027 (wrong direction); LinkedIn mirror says 'No longer accepting applications'.",
+  "Link": "https://jobs.careers.gov.sg/jobs/hrp/17402050/005056a3-53e2-1fd1-a8e3-c67cf4a27406"
+ },
+ {
+  "Company": "Axcellent Consultancy & Services Pte Ltd",
+  "Role": "Account / Tax Internship",
+  "Status": "open",
+  "Reason": "REJECTED: accounting/tax role family is outside the requested business/strategy/consulting/marketing/operations families.",
+  "Link": "https://www.internsg.com/job/axcellent-consultancy-services-pte-ltd-account-tax-internship/"
+ },
+ {
+  "Company": "World Scientific Publishing Co Pte Ltd",
+  "Role": "Editorial Intern (Social Sciences)",
+  "Status": "closed",
+  "Reason": "REJECTED: explicitly closed on the listing page; also immediate start, not March 2027.",
+  "Link": "https://www.internsg.com/job/world-scientific-publishing-co-pte-ltd-editorial-intern-social-sciences-4/"
+ },
+ {
+  "Company": "GSK",
+  "Role": "Polytechnic Internship - QA Operations, Singapore (March 2027 to August 2027)",
+  "Status": "closed",
+  "Reason": "REJECTED: official GSK page says the job has been filled; also vaccines QA/QC roles are pharma-science family (GSK Quality Control variants Mar-Aug/Nov 2027 are lab roles).",
+  "Link": "https://jobs.gsk.com/us/en/job/450661/Polytechnic-Internship-QA-Operations-Singapore-March-2027-to-August-2027"
+ },
+ {
+  "Company": "Synapxe (for NHG / public healthcare)",
+  "Role": "Poly Internship Mar 2027 to Feb 2028 - AI, Automation & Digital Transformation (and sibling postings)",
+  "Status": "open",
+  "Reason": "REJECTED: 12 months exceeds the 6-month maximum; also IT/automation roles, not business family.",
+  "Link": "https://careers-public-healthtech-jobs.synapxe.sg/job/Poly-Internship-Mar-2027-to-Feb-2028-Vanguard-Automation-&-Digital-Transformation/60656544"
+ },
+ {
+  "Company": "S&P Global",
+  "Role": "Commodity Associate Program - 2027 Intake",
+  "Status": "open",
+  "Reason": "REJECTED: full-time graduate development program (7 months > 6, transitions to permanent), not an internship.",
+  "Link": "https://linkedin.com/jobs/view/commodity-associate-at-s-p-global-4481161436"
+ },
+ {
+  "Company": "Singapore Economic Development Board (EDB)",
+  "Role": "EDB Associate Programme 2027",
+  "Status": "open",
+  "Reason": "REJECTED: 10-month full-time programme for fresh graduates/early careerists, not a 4-6 month internship.",
+  "Link": "https://edb.gov.sg/en/careers/associate-programme"
+ },
+ {
+  "Company": "Altman Solon",
+  "Role": "2027 Strategy Intern",
+  "Status": "unclear",
+  "Reason": "REJECTED: 10 weeks is below the 4-month minimum and no explicit March 2027 start; summer-style intake.",
+  "Link": "https://altmansolon.com/careers/student-opportunities"
+ },
+ {
+  "Company": "DNV",
+  "Role": "Maritime Advisory Business Development Intern",
+  "Status": "open",
+  "Reason": "REJECTED for explicit list: no March 2027 start stated. Good business-family role (MBA/Master's preferred); worth asking the recruiter about a March 2027 start, but cannot be counted as explicit.",
+  "Link": "https://jobs.dnv.com/job-search/maritime/no-career-track/singapore/maritime-advisory-business-development-intern/300001762622398"
+ },
+ {
+  "Company": "Carousell Group (REFASH)",
+  "Role": "Social Media Creative Intern (Mar 2027)",
+  "Status": "open",
+  "Reason": "REJECTED for Singapore: the official Mar 2027 posting is Kuala Lumpur. A bilingualjobs.io aggregator copy describes a Singapore REFASH role ('starting March 2027 is preferred') but no matching live official Singapore posting exists: Carousell's current Singapore Social Media Creative Intern (SmartRecruiters 74400016...",
+  "Link": "https://jobs.smartrecruiters.com/CarousellGroup/744000152175607-social-media-creative-intern-mar-2027-"
+ },
+ {
+  "Company": "Knightsbridge Strategic Group",
+  "Role": "Intelligence & Strategy Intern",
+  "Status": "open",
+  "Reason": "REJECTED: remote role with a UK-based firm (London travel for other roles), unpaid and only ~30 hours/month; not a Singapore-based full-time internship.",
+  "Link": "https://knightsbridgesg.com/careers"
+ },
+ {
+  "Company": "OCBC Bank",
+  "Role": "Internship: Global Consumer Financial Services, CFS Finance - Strategy [March 2026 - March 2027]",
+  "Status": "closed",
+  "Reason": "REJECTED: 12 months exceeds maximum, starts March 2026 not 2027, and no longer accepting applications. OCBC's current cycles are Sep 2026 - Mar 2027 (end in March).",
+  "Link": "https://sg.linkedin.com/jobs/view/internship-global-consumer-financial-services-cfs-finance-%E2%80%93-strategy-march-2026-march-2027-at-ocbc-4375119988"
+ },
+ {
+  "Company": "Workiva",
+  "Role": "Marketing Intern - JAPAC",
+  "Status": "closed",
+  "Reason": "REJECTED: ends in March 2027 (wrong direction) and application deadline passed.",
+  "Link": "https://emploive.com/jobs/7427717/marketing-intern-japac-workiva"
+ },
+ {
+  "Company": "Ogilvy Singapore",
+  "Role": "Intern, PR&I - Social / Consumer-Corporate; Client Service Intern, WPP@Unilever (Sept 2026 - Mar 2027)",
+  "Status": "unclear",
+  "Reason": "REJECTED: current Ogilvy cycle ENDS in March 2027 (wrong direction). No Mar 2027 - Sep 2027 Ogilvy cycle found in searches.",
+  "Link": "https://offeraio.com/internships/at/ogilvy/intern-pr-and-i-social-sept-2026-mar-2027-11867318"
+ },
+ {
+  "Company": "TikTok",
+  "Role": "Integrated Marketing Communications intern (GBM) - 2027 Start",
+  "Status": "open",
+  "Reason": "REJECTED for explicit list: '2027 Start' with applicant-chosen dates, no explicit March 2027 start. Could potentially be shaped into a March start, but not stated.",
+  "Link": "https://linkedin.com/jobs/view/integrated-marketing-communications-intern-gbm-2027-start-at-tiktok-4451129106"
+ },
+ {
+  "Company": "Ecolab",
+  "Role": "Marketing & Communications Internship (2027)",
+  "Status": "open",
+  "Reason": "REJECTED for explicit list: no March 2027 start stated. SEA MarComm/corporate communications intern role, undergraduate in Marketing/Communications/Business.",
+  "Link": "https://jobs.ecolab.com/global/en/job/R00306396/Marketing-Communications-Internship-2027"
+ },
+ {
+  "Company": "DBS Bank",
+  "Role": "2027 DBS Internship (Business and Support Units)",
+  "Status": "open",
+  "Reason": "REJECTED for explicit list: March 2027 is the application deadline, not a stated start; minimum 12 weeks is below 4 months. Start dates are arranged per role.",
+  "Link": "https://linkedin.com/jobs/view/2027-dbs-internship-business-and-support-units-at-dbs-bank-4480335954"
+ },
+ {
+  "Company": "Shopee",
+  "Role": "Market Research Intern, Regional Brand & Growth Marketing (Spring 2027)",
+  "Status": "closed",
+  "Reason": "REJECTED: official page shows 'This job has expired'.",
+  "Link": "https://careers.shopee.sg/job-detail/106697"
+ },
+ {
+  "Company": "Shopee",
+  "Role": "Strategy and Analytics Intern - Regional CRM, Regional Brand & Growth Marketing (Spring 2027)",
+  "Status": "closed",
+  "Reason": "REJECTED: official page shows 'This job has expired'.",
+  "Link": "https://careers.shopee.sg/job-detail/J00336273/1"
+ },
+ {
+  "Company": "NBCUniversal",
+  "Role": "Public Relations and Communications Intern - Universal Networks",
+  "Status": "open",
+  "Reason": "REJECTED: 9 months exceeds the 6-month maximum, part-time, and ANZ-based rather than Singapore.",
+  "Link": "https://jobs.smartrecruiters.com/NBCUniversal3/744000150585809-public-relations-and-communications-intern-universal-networks"
+ },
+ {
+  "Company": "SPH Media Limited (SPH Foundation)",
+  "Role": "Operations and Communications Intern (older duplicate listing)",
+  "Status": "closed",
+  "Reason": "REJECTED: marked Closed on InternSG; superseded by the live -2 listing which is in the explicit list.",
+  "Link": "https://www.internsg.com/job/sph-media-limited-operations-and-communications-intern/"
+ },
+ {
+  "Company": "Vontobel",
+  "Role": "Early Careers Internship - Structured Solutions Sales (SG)",
+  "Status": "closed",
+  "Reason": "6 months from 1 March 2027 but application window 5-15 Nov 2026 has passed; official hub says applications now closed.",
+  "Link": "https://vontobel.com/en/about-vontobel/careers/open-positions/9553-early-careers-internship-program-structured-solutions-sales-100"
+ },
+ {
+  "Company": "World Scientific Publishing",
+  "Role": "Editorial Intern (Social Sciences)",
+  "Status": "closed",
+  "Reason": "Listing closed; page shows Immediate Start - Flexible End, not an explicit March start.",
+  "Link": "https://www.internsg.com/job/world-scientific-publishing-co-pte-ltd-editorial-intern-social-sciences-4"
+ },
+ {
+  "Company": "KLASS Engineering & Solutions",
+  "Role": "HR and Admin Assistant (Intern)",
+  "Status": "rejected",
+  "Reason": "Nov 2026 - Mar 2027: ENDS in March, starts November.",
+  "Link": "https://www.internsg.com/job/klass-engineering-solutions-pte-ltd-hr-and-admin-assistant-intern/"
+ },
+ {
+  "Company": "Univers",
+  "Role": "SOC L1 Security Analyst Intern",
+  "Status": "rejected",
+  "Reason": "Explicit March 2027 start but 1-Year Internship (12 months, >6).",
+  "Link": "https://univers.breezy.hr/p/bafa97d9f10901-soc-l1-security-analyst-intern-1-year-internship-march-2027"
+ },
+ {
+  "Company": "Synapxe",
+  "Role": "Poly Internships Mar 2027 - Feb 2028 (multiple)",
+  "Status": "rejected",
+  "Reason": "Explicit March 2027 start but 12 months (>6); final-year diploma only.",
+  "Link": "https://jobs.careers.gov.sg"
+ },
+ {
+  "Company": "NRF",
+  "Role": "Research Commercialisation Internship",
+  "Status": "rejected",
+  "Reason": "Explicit March-June 2027 but only 3 months (<4); STEM research.",
+  "Link": "https://jobs.careers.gov.sg/jobs/hrp/18227718/005056a3-d347-1fe1-b8d2-c91ad96e42c5"
+ },
+ {
+  "Company": "Sony Electronics Singapore",
+  "Role": "Marketing Intern (Dec 2026 - March 2027)",
+  "Status": "rejected",
+  "Reason": "ENDS in March, starts December 2026.",
+  "Link": "https://sg.linkedin.com/jobs/view/4486327608"
+ },
+ {
+  "Company": "NCS Group",
+  "Role": "Digital Marketing Intern / Growth & Innovation Intern",
+  "Status": "rejected",
+  "Reason": "January 2027 commencement, not March.",
+  "Link": "https://sg.linkedin.com/jobs/view/4481661301"
+ },
+ {
+  "Company": "Cynapse",
+  "Role": "AI Evaluation & Quality Intern",
+  "Status": "rejected",
+  "Reason": "May 2027 start (not March); min 3 months.",
+  "Link": "https://cynapse.ai/careers/ai-evaluation-quality-intern"
+ },
+ {
+  "Company": "Cynapse",
+  "Role": "Pre-Sales Technical Engineer Intern / AI R&D Intern",
+  "Status": "rejected",
+  "Reason": "Nov/Dec 2026 or Jan 2027 start, not March.",
+  "Link": "https://cynapse.ai/careers/pre-sales-technical-engineer-intern"
+ },
+ {
+  "Company": "Edelman",
+  "Role": "Research & Strategy Intern",
+  "Status": "rejected",
+  "Reason": "Oct 2026 - Mar 2027 posting removed 15 Oct 2026; current EdelmanNEXT cycle is Jan-Jun 2027; no Mar-Sep 2027 cycle exists.",
+  "Link": "https://builtin.com/job/research-and-strategy-intern-october-2026-march-2027/11248302"
+ }
+]

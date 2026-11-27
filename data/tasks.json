@@ -1,0 +1,18 @@
+[
+ {
+  "Task": "Connect Hermes to Google Drive",
+  "Details": "Drive file storage and task logging are available through the folder-scoped connector.",
+  "Status": "done",
+  "Created (UTC)": "2026-10-24T23:41:42+00:00",
+  "Due Date": "",
+  "Result URL": "https://drive.google.com/file/d/1076pgq80xkfislZZb7woKuf2qhZkvv-f/view?usp=drivesdk"
+ },
+ {
+  "Task": "Save internship pipeline deliverables to Google Drive",
+  "Details": "Save Tracker.csv, SHORT-LIST.md, 14 drafts + INDEX, and clean resumes into the STAGE INTERNSHIP LENNY Drive folder.",
+  "Status": "open",
+  "Created (UTC)": "2026-10-25T13:04:32+00:00",
+  "Due Date": "",
+  "Result URL": ""
+ }
+]
