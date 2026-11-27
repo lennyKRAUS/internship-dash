@@ -2,6 +2,21 @@
 
 internship search dashboard — March 2027, Singapore, BBA profile.
 
+## Live sheet sync
+
+The app polls the **public** Central Internship Tracker sheet every 60s
+(`ROLES` / `LEADS` / `PEOPLE` tabs via the gviz CSV endpoint) and re-renders
+automatically when the data changes — add a LinkedIn profile or role in the
+sheet and it shows up here within a minute. The header shows `● live · synced …`
+(or `○ cached` if the sheet is unreachable). Overrides are keyed by
+company+role / LinkedIn, so they survive sheet edits. Env: `SHEET_ID`,
+`SYNC=0` to disable, `SYNC_INTERVAL` seconds.
+
+## Rotating backdrops
+
+Drop images into `static/backdrops/` — one is picked at random on each server
+boot (`GET /api/backdrop`).
+
 ## Run
 
 ```bash

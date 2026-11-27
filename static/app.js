@@ -73,10 +73,10 @@ function bars(counts) {
   ).join("") || '<span class="muted">no data</span>';
 }
 
-function statusSelect(kind, index, current, options) {
+function statusSelect(kind, key, current, options) {
   const cur = kind === "pipeline" ? bucket(current) : (current === "Sent" ? "Sent" : "Not sent");
   const opts = options.map(o => `<option value="${o}"${cur === o ? " selected" : ""}>${o}</option>`).join("");
-  return `<select class="${kind === "pipeline" ? "status" : "ostatus"}" data-kind="${kind}" data-index="${index}">${opts}</select>`;
+  return `<select class="${kind === "pipeline" ? "status" : "ostatus"}" data-kind="${kind}" data-key="${esc(key)}">${opts}</select>`;
 }
 
 function canonFamily(r) {
@@ -204,7 +204,7 @@ function renderPipeline() {
     html += `<tr><td><strong>${esc(r.Company)}</strong></td><td>${esc(r.Role)}</td><td>${esc(r.Family)}</td><td>${intake}</td>
       <td>${esc(r["Start (March 2027)"] || r["Start stated"] || "")}</td><td>${esc(r.Duration || "")}</td><td>${esc(r["Pay (SGD/month)"] || "")}</td>
       <td>${dl}</td>
-      <td>${statusSelect("pipeline", i, r["Dashboard status"] || r["Application status"] || "", STATUS_OPTIONS)}
+      <td>${statusSelect("pipeline", (r.Company || "") + "|" + (r.Role || ""), r["Dashboard status"] || r["Application status"] || "", STATUS_OPTIONS)}
       <div class="small muted" style="margin-top:4px">${esc(r["Application status"] || "")}</div></td>
       <td>${r["Portal link"] && r["Portal link"] !== "UNRDD" ? `<a href="${esc(r["Portal link"])}" target="_blank" rel="noopener">open ↗</a>` : '<span class="muted">UNRDD</span>'}</td>
       <td class="small">${esc(r["Notes / eligibility flags"] || r.Note || "")}</td></tr>`;
@@ -233,7 +233,7 @@ function renderOutreach() {
     document.getElementById("obody").innerHTML = rows.map(({ p, i }) =>
       `<tr><td><strong>${esc(p.Name)}</strong></td><td>${esc(p.Company)}</td><td>${esc(p.Position)}</td><td class="small">${esc(p.Relevance)}</td>
       <td>${p.LinkedIn ? `<a href="${esc(p.LinkedIn)}" target="_blank" rel="noopener">open ↗</a>` : '<span class="muted">—</span>'}</td>
-      <td>${statusSelect("people", i, p.Status || "", OUTREACH_STATUS)} <span class="pill ${p.Status === "Sent" ? "sent" : "todo"}">${p.Status === "Sent" ? "sent" : "not sent"}</span></td></tr>`
+      <td>${statusSelect("people", p.LinkedIn || p.Name || "", p.Status || "", OUTREACH_STATUS)} <span class="pill ${p.Status === "Sent" ? "sent" : "todo"}">${p.Status === "Sent" ? "sent" : "not sent"}</span></td></tr>`
     ).join("") || '<tr><td colspan="6" class="muted">no matches</td></tr>';
   };
   document.getElementById("oq").addEventListener("input", renderRows);
@@ -289,7 +289,7 @@ document.addEventListener("change", e => {
   fetch("/api/override", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ kind: sel.dataset.kind, index: +sel.dataset.index, field, value: sel.value }),
+    body: JSON.stringify({ kind: sel.dataset.kind, key: sel.dataset.key, field, value: sel.value }),
   }).then(r => r.json()).then(d => {
     DATA = d;
     renderAllSafe();
@@ -301,4 +301,22 @@ document.addEventListener("change", e => {
   });
 });
 
-fetch("/api/data").then(r => r.json()).then(d => { DATA = d; renderAllSafe(); });
+// backdrop: server picks one randomly at each boot
+fetch("/api/backdrop").then(r => r.json()).then(b => {
+  if (b && b.url) document.body.style.backgroundImage = `url('${b.url}')`;
+}).catch(() => {});
+
+// initial load + live sync: re-fetch every 30s, re-render only if data changed
+let LAST = null;
+fetch("/api/data").then(r => r.json()).then(d => { DATA = d; LAST = JSON.stringify(d); renderAllSafe(); });
+setInterval(() => {
+  fetch("/api/data").then(r => r.json()).then(d => {
+    const s = JSON.stringify(d);
+    if (s !== LAST) { LAST = s; DATA = d; renderAllSafe(); }
+    const ind = document.getElementById("sync-ind");
+    if (ind) {
+      ind.textContent = d.live ? "● live · synced " + (d.syncedAt || "") : "○ cached (sheet unreachable)";
+      ind.className = "sub " + (d.live ? "live" : "off");
+    }
+  }).catch(() => {});
+}, 30000);
